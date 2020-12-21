@@ -6,7 +6,7 @@ import os
 init(autoreset=True)
 print(Fore.GREEN + 'Импорт модулей (config.py): Успех')
 
-os.environ['SECRET_TOKEN'] = '1425645766:AAFrtZBrvQ0M95b7uFEv748WAUbTeaAXt-c'
+os.environ['SECRET_TOKEN'] = 'Сюда токен'
 os.environ['name'] = 'None'
 os.environ['username'] = 'None'
 os.environ['superadmin'] = '799637030'
@@ -16,8 +16,8 @@ os.environ['id'] = '0'
 os.environ['amount'] = '0'
 os.environ['status'] = 'None'
 os.environ['addr'] = '0'
-conn = psycopg2.connect(dbname='TS', user='ts',
-                        password='6101', host='localhost') #Здесь данные для БД
+conn = psycopg2.connect(dbname='', user='',
+                        password='', host='localhost') #Здесь данные для БД
 cursor = conn.cursor()
 i = 0
 print(Fore.GREEN + 'Создание переменных (config.py): Успех')
