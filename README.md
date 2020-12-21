@@ -1,6 +1,6 @@
 # Transacrions-By-TS
 ![](https://img.shields.io/badge/license-AGPL--3.0-green)
-![](https://img.shields.io/badge/version-0.0.1-yellow)
+![](https://img.shields.io/badge/version-0.0.2-yellow)
 ![](https://img.shields.io/badge/platform-telegram-blue)
 
 __(Если вам что-то не понятно или у вас что-то не так пишите в Issuies)__
