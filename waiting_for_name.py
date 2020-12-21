@@ -75,11 +75,17 @@ print(Fore.GREEN + 'Создание check_balance() (waiting_for_name.py): Ус
 
 def create_order_step1(message, bot):
     bot.send_message(message.chat.id, 'Введите id адресата ...')
+
     environ['status'] = 'waiting for id'
 print(Fore.GREEN + 'Создание create_order_step1() (waiting_for_name.py): Успех')
 
 def create_order_step2(message, bot):
     environ['id'] = message.text
+
+    try:
+        int(environ.get('id'))
+    except:
+        raise Exception('Ну, а так-то здесь, _(пока-что)_, *должны* быть цифры')
 
     bot.send_message(message.chat.id, 'Введите количество логиков ...')
     environ['status'] = 'waiting for id.step2'
@@ -88,6 +94,11 @@ print(Fore.GREEN + 'Создание create_order_step2() (waiting_for_name.py):
 def create_order_step3(message, bot):
     global yesNo_for_order
     environ['amount'] = message.text
+
+    try:
+        int(environ.get('amount'))
+    except:
+        raise Exception('Ну, а так-то здесь *должны* быть цифры')
 
     bot.send_message(message.chat.id, 'Все верно?: \nОтправить на: ' + environ.get('id') + '\nКоличество: ' + environ.get('amount'), reply_markup=yesNo_for_order)
     environ['status'] = 'None'

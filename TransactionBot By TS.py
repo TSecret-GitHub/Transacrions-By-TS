@@ -64,10 +64,16 @@ def content_types_text(message):
         return
     if environ.get('status') == 'waiting for id':
         print('waiting for id')
-        create_order_step2(message, bot)
+        try:
+            create_order_step2(message, bot)
+        except Exception as e:
+            bot.send_message(message.chat.id, e, parse_mode='Markdown')
         return
     if environ.get('status') == 'waiting for id.step2':
-        create_order_step3(message, bot)
+        try:
+            create_order_step3(message, bot)
+        except Exception as e:
+            bot.send_message(message.chat.id, e, parse_mode='Markdown')
         return
 print(Fore.GREEN + 'Директива для сообщений (Основной файл): Успех')
 
