@@ -8,8 +8,9 @@ import PostgreSQL
 from waiting_for_name import *
 import time
 from os import *
+init(autoreset=True)
 #-Импорты
-bar.next() #13
+print(Fore.GREEN + 'Импорт модулей (Основной файл): Успех')
 
 #Переменные
 init(autoreset=True)
@@ -17,43 +18,51 @@ init(autoreset=True)
 bot = telebot.TeleBot(environ.get('SECRET_TOKEN'))
 command_to_update = environ.get('command_to_update')
 #-Переменные
-bar.next() #14
+print(Fore.GREEN + 'Создание переменных (Основной файл): Успех')
 
 #Хендлер для команды /start
 @bot.message_handler(commands=['start'])
 def start_message(message):
+    environ['status'] = 'None'
 
     bot.send_message(message.chat.id, 'Привет, начнем! \nЗарегистрируйся ==>')
     bot.send_message(message.chat.id, 'Напиши имя')
 
-    environ['addr'] = str(message.chat.id)
     environ['status'] = 'waiting for name'
 #-Хендлер для команды /start
-bar.next() #15
+print(Fore.GREEN + 'Директива для команды /start (Основной файл): Успех')
 
 #Хендлер для команды //service.command_to_update
 @bot.message_handler(commands=[command_to_update])
 def update_superadmin_chat_id(message):
-    print('test block command_to_update')
+    environ['status'] = 'None'
+
+    print(Fore.MAGENTA + 'DEBUG: Заход в блок service.command_to_update')
+    print(Fore.MAGENTA + 'DEBUG: Chat ID: ' + str(message.chat.id))
+    print(Fore.MAGENTA + 'DEBUG: Username: ' + message.from_user.username)
+
     environ['superadmin'] = str(message.chat.id)
-    print(environ.get('superadmin'))
+    print(Fore.MAGENTA + 'DEBUG: Superadmin переназначен: ' + environ.get('superadmin'))
+
     bot.send_message(message.chat.id, 'Обновлено!')
 #Хендлер для команды //service.command_to_update
-bar.next() #16
+print(Fore.GREEN + 'Директива для команды //service.command_to_update (Основной файл): Успех')
 
 #Основной хендлер который направляет сообщения по функциям
 @bot.message_handler(content_types=['text'])
 def content_types_text(message):
-    environ['addr'] = str(message.chat.id)
-    
+
     if environ.get('status') == 'waiting for name':
+        print(Fore.LIGHTMAGENTA_EX + 'INFO: Начата регистрация')
+        environ['addr'] = str(message.chat.id)
         continue_text(message, bot)
         return
-    print(type(environ.get('superadmin')))
-    print(type(message.chat.id))
     if str(message.chat.id) == environ.get('superadmin') and environ.get('status') == 'waiting for balance.step1':
-        print('if ok')
-        callback_handler_step2(message, bot)
+        try:
+            callback_handler_step2(message, bot)
+        except Exception as e:
+            bot.send_message(message.chat.id, e, parse_mode='Markdown')
+
         return
     if message.text.lower() == 'баланс':
         check_balance(message, bot)
@@ -62,23 +71,24 @@ def content_types_text(message):
         create_order_step1(message, bot)
         return
     if environ.get('status') == 'waiting for id':
-        print('waiting for id')
-        create_order_step2(message, bot)
+        try:
+            create_order_step2(message, bot)
+        except Exception as e:
+            bot.send_message(message.chat.id, e, parse_mode='Markdown')
         return
     if environ.get('status') == 'waiting for id.step2':
-        create_order_step3(message, bot)
+        try:
+            create_order_step3(message, bot)
+        except Exception as e:
+            bot.send_message(message.chat.id, e, parse_mode='Markdown')
         return
-
-bar.next() #17
+print(Fore.GREEN + 'Директива для сообщений (Основной файл): Успех')
 
 #Хендлер на Callback`и
 @bot.callback_query_handler(func=lambda call: True)
 def callback_inline(call):
-    print('step callback 2')
     if call.data == "confirm":
         environ['status'] = 'waiting for balance.step1'
-        print('step callback 3')
-        print('status -', environ.get('status'))
         bot.send_message(int(environ.get('superadmin')), 'Balance')
 
     elif call.data == 'cancel':
@@ -100,9 +110,13 @@ def callback_inline(call):
         if PostgreSQL.balance(int(environ.get('addr')), True) == True:
             bot.send_message(int(environ.get('addr')), 'Вы не подтверждены!')
             return
-        
-        PostgreSQL.create_order_BD(int(environ.get('addr')), int(environ.get('id')), int(environ.get('amount')))
-        print(environ.get('id'), "- environ.get('id')")
+
+        #print(environ.get('amount'), '- amount')
+        try:
+            PostgreSQL.create_order_BD(int(environ.get('addr')), int(environ.get('id')), int(environ.get('amount')))
+        except Exception as e:
+            bot.send_message(int(environ.get('addr')), e, parse_mode='Markdown')
+            return
         bot.send_message(int(environ.get('addr')), 'Готово! \nOrder создан, подробнее - /orders')
     #elif call.data == 'yes.order':
     #    global id
@@ -111,9 +125,9 @@ def callback_inline(call):
     #    print(id, '- id')
     #    print(amount, '- amount')
 
-bar.next() #18
+print(Fore.GREEN + 'Директива для Callback`ов (Основной файл): Успех')
 
-bar.next() #19
+print(Fore.GREEN + 'Загрузка завершена, запускаю bot.polling...')
 time.sleep(1)
 print('\n')
 bot.polling(none_stop=True)
