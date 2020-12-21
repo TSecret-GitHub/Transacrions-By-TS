@@ -23,11 +23,11 @@ print(Fore.GREEN + 'Создание переменных (Основной фа
 #Хендлер для команды /start
 @bot.message_handler(commands=['start'])
 def start_message(message):
+    environ['status'] = 'None'
 
     bot.send_message(message.chat.id, 'Привет, начнем! \nЗарегистрируйся ==>')
     bot.send_message(message.chat.id, 'Напиши имя')
 
-    environ['addr'] = str(message.chat.id)
     environ['status'] = 'waiting for name'
 #-Хендлер для команды /start
 print(Fore.GREEN + 'Директива для команды /start (Основной файл): Успех')
@@ -35,6 +35,8 @@ print(Fore.GREEN + 'Директива для команды /start (Основ�
 #Хендлер для команды //service.command_to_update
 @bot.message_handler(commands=[command_to_update])
 def update_superadmin_chat_id(message):
+    environ['status'] = 'None'
+
     print('test block command_to_update')
     environ['superadmin'] = str(message.chat.id)
     print(environ.get('superadmin'))
@@ -45,16 +47,20 @@ print(Fore.GREEN + 'Директива для команды //service.command_t
 #Основной хендлер который направляет сообщения по функциям
 @bot.message_handler(content_types=['text'])
 def content_types_text(message):
-    environ['addr'] = str(message.chat.id)
 
     if environ.get('status') == 'waiting for name':
+        environ['addr'] = str(message.chat.id)
         continue_text(message, bot)
         return
     print(type(environ.get('superadmin')))
     print(type(message.chat.id))
     if str(message.chat.id) == environ.get('superadmin') and environ.get('status') == 'waiting for balance.step1':
         print('if ok')
-        callback_handler_step2(message, bot)
+        try:
+            callback_handler_step2(message, bot)
+        except Exception as e:
+            bot.send_message(message.chat.id, e, parse_mode='Markdown')
+            
         return
     if message.text.lower() == 'баланс':
         check_balance(message, bot)

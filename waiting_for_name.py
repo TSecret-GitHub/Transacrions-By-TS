@@ -35,10 +35,8 @@ def continue_text(message, bot):
 print(Fore.GREEN + 'Создание continue_text() (waiting_for_name.py): Успех')
 
 def callback_handler_step2(message, bot):
-    print('step 2')
-
     global is_number
-    balance = is_number(message.text)
+    balance = message.text
     print(message.text)
 
     print(message.chat.id, '- message.chat.id')
@@ -53,8 +51,13 @@ def callback_handler_step2(message, bot):
     #    print('Zero')
     #    return
 
+
     print(environ.get('addr'))
     print(balance)
+    try:
+        int(balance)
+    except ValueError:
+        raise Exception('Это должно быть *целым* числом!')
     PostgreSQL.confirm(int(environ.get('addr')), message.text)
     print('confirm OK')
     bot.send_message(int(environ.get('addr')), 'Вы были подтверждены!')
