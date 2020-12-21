@@ -1,7 +1,4 @@
-<<<<<<< Updated upstream
 # Transacrions-By-TS
- 
-=======
 ![](https://img.shields.io/badge/license-AGPL--3.0-green)
 ![](https://img.shields.io/badge/version-0.0.1-yellow)
 ![](https://img.shields.io/badge/platform-telegram-blue)
@@ -110,6 +107,7 @@ CREATE TABLE transactions_by_ts.users
 > Как создать бота через Botfather?
 > Для создания бота введите в чат с BotFather команду /newbot. Бот попросит вас ввести название для нового бота. Можете указать в любом удобном формате, поддерживается кириллица и латиница, например: «тестовый bot». — Имя будет отображаться в заголовке и в информации о боте.
 [Сайт](https://botcreators.ru/blog/kak-sozdat-svoego-bota-v-botfather/#:~:text=%D0%94%D0%BB%D1%8F%20%D1%81%D0%BE%D0%B7%D0%B4%D0%B0%D0%BD%D0%B8%D1%8F%20%D0%B1%D0%BE%D1%82%D0%B0%20%D0%B2%D0%B2%D0%B5%D0%B4%D0%B8%D1%82%D0%B5%20%D0%B2,%D0%B8%20%D0%B2%20%D0%B8%D0%BD%D1%84%D0%BE%D1%80%D0%BC%D0%B0%D1%86%D0%B8%D0%B8%20%D0%BE%20%D0%B1%D0%BE%D1%82%D0%B5.)
+
 Потом строка 19-21: вводите данные сервера(сервер `localhost`)
 
 ### Зависимости
@@ -128,4 +126,3 @@ pip install random
 А вот теперь мы можем запустить бота:
 Зайдите в папку проека и напишите команду: `python 'TransactionBot By TS.py'`
 ***=)***
->>>>>>> Stashed changes
