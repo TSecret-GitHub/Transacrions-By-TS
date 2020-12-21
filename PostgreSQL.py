@@ -51,7 +51,6 @@ def balance(id, question=False):
 
     if question == True:
         if record == None:
-            print(record == None, 'balance postgresql')
             return True
 
     return record
@@ -62,23 +61,38 @@ def create_order_BD(from_order, to_order, amount):
     global conn
     global cursor
 
-    print(from_order, '- from_order')
-    print(to_order, '- to_order')
-    print(amount, '- amount')
+    #print(from_order, '- from_order')
+    #print(to_order, '- to_order')
+    #print(amount, '- amount')
 
     cursor.execute("INSERT INTO transactions_by_ts.orders (from_order, to_order, amount) VALUES ('{from_order}', '{to_order}', '{amount}')".format(from_order=from_order, to_order=to_order, amount=amount))
 
-    cursor.execute("SELECT balance FROM transactions_by_ts.users WHERE id = '{id}'".format(id=from_order))
+    debug_var = cursor.execute("SELECT balance FROM transactions_by_ts.users WHERE id = '{id}'".format(id=from_order))
     record = cursor.fetchone()
     if record == None:
         print(Fore.RED + 'Ошибка: невозможно выполнить транзакцию, отправителя НЕ существует')
+        print(Fore.MAGENTA + 'DEBUG: \nrecord:' + record + '\ncursor:' + debug_var)
         raise Exception('Вы не подтверждены!')
 
-    cursor.execute("SELECT balance FROM transactions_by_ts.users WHERE id = '{id}'".format(id=to_order))
+    debug_var = cursor.execute("SELECT balance FROM transactions_by_ts.users WHERE id = '{id}'".format(id=to_order))
     record_to = cursor.fetchone()
     if record_to == None:
         print(Fore.RED + 'Ошибка: невозможно выполнить транзакцию, получателя НЕ существует')
+        print(Fore.MAGENTA + 'DEBUG: \nrecord_to:' + record_to + '\ncursor:' + debug_var)
         raise Exception('Невозможно выполнить транзакцию, получателя *НЕ* существует')
+        return
+
+    print(Fore.MAGENTA + str(record) + '- record')
+    if record[0]:
+        print(Fore.RED + 'Ошибка: баланс получателя отрицателен')
+        print(Fore.MAGENTA + 'DEBUG: \nrecord_to:' + record[0])
+        raise Exception('Ваш баланс орицателен `=(`)')
+        return
+
+    if record[0] - amount:
+        print(Fore.RED + 'Ошибка: На балансе недостаточно Логиков')
+        print(Fore.MAGENTA + 'DEBUG: \nrecord_to:' + record[0])
+        raise Exception('На вашем балансе недостаточно логиков `=(`)')
         return
 
     cursor.execute("UPDATE transactions_by_ts.users SET balance = '{balance}' WHERE id = '{id}'".format(balance=record[0] - amount, id=from_order))

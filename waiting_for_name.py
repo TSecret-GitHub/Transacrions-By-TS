@@ -26,7 +26,6 @@ def continue_text(message, bot):
         bot.send_message(int(environ.get('addr')), 'Вы *заблокированы*!', parse_mode='Markdown')
         return
 
-    print(environ.get('addr'), '- addr')
     #print(type(addr))
     PostgreSQL.register(int(message.chat.id), environ.get('name'))
     bot.send_message(int(message.chat.id), 'Думаю все... \nОжидай когда тебя подтвердят...', reply_markup=menu)
@@ -35,12 +34,11 @@ def continue_text(message, bot):
 print(Fore.GREEN + 'Создание continue_text() (waiting_for_name.py): Успех')
 
 def callback_handler_step2(message, bot):
-    global is_number
     balance = message.text
-    print(message.text)
+    #print(message.text)
 
-    print(message.chat.id, '- message.chat.id')
-    print(environ.get('status'), '- status')
+    #print(message.chat.id, '- message.chat.id')
+    #print(environ.get('status'), '- status')
 
     #if message.chat.id != superadmin and status != 'waiting for balance.step1':
     #    print('canceled')
@@ -52,16 +50,18 @@ def callback_handler_step2(message, bot):
     #    return
 
 
-    print(environ.get('addr'))
-    print(balance)
+    #print(environ.get('addr'))
+    #print(balance)
     try:
         int(balance)
     except ValueError:
+        print(Fore.RED + 'Ошибка: баланс не целое число, повтор...')
         raise Exception('Это должно быть *целым* числом!')
     PostgreSQL.confirm(int(environ.get('addr')), message.text)
-    print('confirm OK')
+    #print('confirm OK')
     bot.send_message(int(environ.get('addr')), 'Вы были подтверждены!')
-    print('send_message OK')
+    #print('send_message OK')
+    environ['status'] = 'None'
 print(Fore.GREEN + 'Создание callback_handler_step2() (waiting_for_name.py): Успех')
 
 def check_balance(message, bot):
@@ -88,6 +88,7 @@ def create_order_step2(message, bot):
     try:
         int(environ.get('id'))
     except:
+        print(Fore.RED + 'Ошибка: ID состоит не только из цифр')
         raise Exception('Ну, а так-то здесь, _(пока-что)_, *должны* быть цифры')
 
     bot.send_message(message.chat.id, 'Введите количество логиков ...')
@@ -101,9 +102,10 @@ def create_order_step3(message, bot):
     try:
         int(environ.get('amount'))
     except:
+        print(Fore.RED + 'Ошибка: amount состоит не только из цифр')
         raise Exception('Ну, а так-то здесь *должны* быть цифры')
 
     bot.send_message(message.chat.id, 'Все верно?: \nОтправить на: ' + environ.get('id') + '\nКоличество: ' + environ.get('amount'), reply_markup=yesNo_for_order)
     environ['status'] = 'None'
-    print(environ.get('status'))
+    #print(environ.get('status'))
 print(Fore.GREEN + 'Создание create_order_step3() (waiting_for_name.py): Успех')
