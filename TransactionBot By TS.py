@@ -1,5 +1,5 @@
 #importing modules, and for telegram...
-#from config import * 
+#from config import *
 import telebot
 from colorama import init, Fore
 from telebot import types
@@ -46,16 +46,16 @@ def update_superadmin_chat_id(message):
 
     bot.send_message(message.chat.id, 'Обновлено!')
 
-'''@bot.message_handler(commands=['get_admin.on', 'get_admin.off'])
-def get_admin(message):
-    if str(message.chat.id) == environ.get('superadmin') and message.text == '/get_admin.on':
-        environ['SMH'] = 'True'
-        bot.send_message(message)
-    else:
-        print(Fore.YELLOW + 'WARNING: отклонён запрос get_admin.on, подробности: @' + str(message.from_user.username))
-        bot.send_message(message.chat.id, 'Забавно что ты сюда попал :) \nНо, я тебя не дам использовать эту команду, она не для тебя... \nПросто забудь об этом. \nИтак, Я збрасываю функцию \nВсе еще странно то, что ты смог дойти хоть сюда =)', parse_mode='Markdown')
-        return
-'''
+#@bot.message_handler(commands=['get_admin.on', 'get_admin.off'])
+#def get_admin(message):
+#    if str(message.chat.id) == environ.get('superadmin') and message.text == '/get_admin.on':
+#        environ['SMH'] = 'True'
+#        bot.send_message(message)
+#    else:
+#        print(Fore.YELLOW + 'WARNING: отклонён запрос get_admin.on, подробности: @' + str(message.from_user.username))
+#        bot.send_message(message.chat.id, 'Забавно что ты сюда попал :) \nНо, я тебя не дам использовать эту команду, она не для тебя... \nПросто забудь об этом. \nИтак, Я збрасываю функцию \nВсе еще странно то, что ты смог дойти хоть сюда =)', parse_mode='Markdown')
+#        return
+
 #Хендлер для команды //service.command_to_update
 print(Fore.GREEN + 'Директива для команды //service.command_to_update (Основной файл): Успех')
 

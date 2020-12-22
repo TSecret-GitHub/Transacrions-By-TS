@@ -19,8 +19,8 @@ os.environ['amount'] = '0'
 os.environ['status'] = 'None'
 os.environ['addr'] = '0'
 os.environ['SMH'] = 'False' #Separate Message Handler, for admins
-conn = psycopg2.connect(dbname='dbname', user='user',
-                        password='password', host='localhost') #Здесь данные для БД
+conn = psycopg2.connect(dbname=dbname, user=user,
+                        password=password, host='localhost') #Здесь данные для БД
 cursor = conn.cursor()
 i = 0
 print(Fore.GREEN + 'Создание переменных (config.py): Успех')
