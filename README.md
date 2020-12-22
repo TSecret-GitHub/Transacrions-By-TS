@@ -1,4 +1,7 @@
 # Transacrions-By-TS
+
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/73804ccf4eff43b8a66699c1836f05c7)](https://app.codacy.com/gh/TSecret-GitHub/Transacrions-By-TS?utm_source=github.com&utm_medium=referral&utm_content=TSecret-GitHub/Transacrions-By-TS&utm_campaign=Badge_Grade)
+
 ![](https://img.shields.io/badge/license-AGPL--3.0-green)
 ![](https://img.shields.io/badge/version-0.0.2-yellow)
 ![](https://img.shields.io/badge/platform-telegram-blue)
