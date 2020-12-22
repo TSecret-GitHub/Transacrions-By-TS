@@ -3,6 +3,7 @@
 ![](https://img.shields.io/badge/version-0.0.2-yellow)
 ![](https://img.shields.io/badge/platform-telegram-blue)
 ![CodeFactor](https://www.codefactor.io/repository/github/tsecret-github/transacrions-by-ts/badge)
+[![Codacy Badge](https://app.codacy.com/project/badge/Grade/ecc8076b03e74ddc854e2d9b856f4b59)](https://www.codacy.com/gh/TSecret-GitHub/Transacrions-By-TS/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=TSecret-GitHub/Transacrions-By-TS&amp;utm_campaign=Badge_Grade)
 
 __(Если вам что-то не понятно или у вас что-то не так пишите в Issuies)__
 # Настройка
