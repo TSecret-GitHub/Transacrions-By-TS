@@ -1,11 +1,10 @@
 #Импорт всех нужных файлов
 import telebot
 import sys
-from config import *
-from Keyboards import *
+from Keyboards import menu, admin_keyboard, yesNo, yesNo_for_order, confirm
 import PostgreSQL
-from os import *
-from colorama import *
+from os import environ
+from colorama import init, Fore
 init(autoreset=True)
 
 print(Fore.GREEN + 'Импорт модулей (waiting_for_name.py): Успех')
@@ -17,12 +16,10 @@ sys.setrecursionlimit(1000000)
 # | Вызывается для получения имени
 # |-------continue_text-------|
 def continue_text(message, bot):
-    global menu
-    global confirm
     environ['name'] = message.text
     environ['username'] = str(message.from_user.username)
 
-    if PostgreSQL.block(int(environ.get('addr')), True) == True:
+    if PostgreSQL.block(int(environ.get('addr')), True) is True:
         bot.send_message(int(environ.get('addr')), 'Вы *заблокированы*!', parse_mode='Markdown')
         return
 
@@ -69,7 +66,7 @@ def check_balance(message, bot):
     balance = PostgreSQL.balance(message.chat.id)
     test_balance = PostgreSQL.balance(message.chat.id, True)
 
-    if PostgreSQL.balance(message.chat.id, True) == True:
+    if PostgreSQL.balance(message.chat.id, True) is True:
         bot.send_message(message.chat.id, 'Вы не подтверждены!')
         return
 
@@ -96,7 +93,6 @@ def create_order_step2(message, bot):
 print(Fore.GREEN + 'Создание create_order_step2() (waiting_for_name.py): Успех')
 
 def create_order_step3(message, bot):
-    global yesNo_for_order
     environ['amount'] = message.text
 
     try:

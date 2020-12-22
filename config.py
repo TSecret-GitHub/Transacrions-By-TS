@@ -1,11 +1,14 @@
 import random
 import string
 import psycopg2
-from colorama import *
+from colorama import init, Fore
 import os
 init(autoreset=True)
 print(Fore.GREEN + 'Импорт модулей (config.py): Успех')
 
+dbname = os.environ.get('dbname')
+user = os.environ.get('user')
+password = os.environ.get('password')
 os.environ['SECRET_TOKEN'] = 'Сюда токен'
 os.environ['name'] = 'None'
 os.environ['username'] = 'None'
@@ -16,8 +19,9 @@ os.environ['id'] = '0'
 os.environ['amount'] = '0'
 os.environ['status'] = 'None'
 os.environ['addr'] = '0'
-conn = psycopg2.connect(dbname='TS', user='ts',
-                        password='6101', host='localhost') #Здесь данные для БД
+os.environ['SMH'] = 'False' #Separate Message Handler, for admins
+conn = psycopg2.connect(dbname=dbname, user=user,
+                        password=password, host='localhost') #Здесь данные для БД
 cursor = conn.cursor()
 i = 0
 print(Fore.GREEN + 'Создание переменных (config.py): Успех')
@@ -28,11 +32,3 @@ while i != 32:
 
 os.environ['command_to_update'] = '/service.' + os.environ.get('random_data')
 print(Fore.GREEN + 'SUCCESS CREATED COMMAND (config.py): /' + os.environ.get('command_to_update'))
-
-def is_number(str):
-    try:
-        balance = int(str)
-        return balance
-    except ValueError:
-        return True
-print(Fore.GREEN + 'Создание is_number() (config.py): Успех')
