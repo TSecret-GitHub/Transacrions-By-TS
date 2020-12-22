@@ -2,6 +2,7 @@
 ![](https://img.shields.io/badge/license-AGPL--3.0-green)
 ![](https://img.shields.io/badge/version-0.0.1-yellow)
 ![](https://img.shields.io/badge/platform-telegram-blue)
+[![CodeFactor](https://www.codefactor.io/repository/github/tsecret-github/transacrions-by-ts/badge/not-tested)](https://www.codefactor.io/repository/github/tsecret-github/transacrions-by-ts/overview/not-tested)
 
 __(Если вам что-то не понятно или у вас что-то не так пишите в Issuies)__
 # Настройка
