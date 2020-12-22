@@ -1,13 +1,13 @@
 #importing modules, and for telegram...
-from config import *
+#from config import * 
 import telebot
-from colorama import *
+from colorama import init, Fore
 from telebot import types
-from Keyboards import *
+from Keyboards import menu, confirm, yesNo, yesNo_for_order1, admin_keyboard
 import PostgreSQL
-from waiting_for_name import *
+from waiting_for_name import continue_text, callback_handler_step2, check_balance, create_order_step1, create_order_step2, create_order_step3
 import time
-from os import *
+from os import environ
 init(autoreset=True)
 #-Импорты
 print(Fore.GREEN + 'Импорт модулей (Основной файл): Успех')
@@ -45,6 +45,17 @@ def update_superadmin_chat_id(message):
     print(Fore.MAGENTA + 'DEBUG: Superadmin переназначен: ' + environ.get('superadmin'))
 
     bot.send_message(message.chat.id, 'Обновлено!')
+
+'''@bot.message_handler(commands=['get_admin.on', 'get_admin.off'])
+def get_admin(message):
+    if str(message.chat.id) == environ.get('superadmin') and message.text == '/get_admin.on':
+        environ['SMH'] = 'True'
+        bot.send_message(message)
+    else:
+        print(Fore.YELLOW + 'WARNING: отклонён запрос get_admin.on, подробности: @' + str(message.from_user.username))
+        bot.send_message(message.chat.id, 'Забавно что ты сюда попал :) \nНо, я тебя не дам использовать эту команду, она не для тебя... \nПросто забудь об этом. \nИтак, Я збрасываю функцию \nВсе еще странно то, что ты смог дойти хоть сюда =)', parse_mode='Markdown')
+        return
+'''
 #Хендлер для команды //service.command_to_update
 print(Fore.GREEN + 'Директива для команды //service.command_to_update (Основной файл): Успех')
 
@@ -126,7 +137,7 @@ def callback_inline(call):
         bot.send_message(int(environ.get('addr')), 'Вас *заблокировали*!', parse_mode='Markdown')
 
     elif call.data == 'yes.order':
-        if PostgreSQL.balance(int(environ.get('addr')), True) == True:
+        if PostgreSQL.balance(int(environ.get('addr')), True) is True:
             bot.send_message(int(environ.get('addr')), 'Вы не подтверждены!')
             return
 
