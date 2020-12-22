@@ -6,7 +6,7 @@ import os
 init(autoreset=True)
 print(Fore.GREEN + 'Импорт модулей (config.py): Успех')
 
-os.environ['SECRET_TOKEN'] = '1425645766:AAFrtZBrvQ0M95b7uFEv748WAUbTeaAXt-c'
+os.environ['SECRET_TOKEN'] = 'Сюда токен'
 os.environ['name'] = 'None'
 os.environ['username'] = 'None'
 os.environ['superadmin'] = '799637030'
