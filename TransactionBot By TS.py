@@ -51,37 +51,56 @@ print(Fore.GREEN + 'Директива для команды //service.command_t
 #Основной хендлер который направляет сообщения по функциям
 @bot.message_handler(content_types=['text'])
 def content_types_text(message):
-
     if environ.get('status') == 'waiting for name':
         print(Fore.LIGHTMAGENTA_EX + 'INFO: Начата регистрация')
         environ['addr'] = str(message.chat.id)
         continue_text(message, bot)
         return
-    if str(message.chat.id) == environ.get('superadmin') and environ.get('status') == 'waiting for balance.step1':
+    elif str(message.chat.id) == environ.get('superadmin') and environ.get('status') == 'waiting for balance.step1':
         try:
             callback_handler_step2(message, bot)
         except Exception as e:
             bot.send_message(message.chat.id, e, parse_mode='Markdown')
 
         return
-    if message.text.lower() == 'баланс':
+    elif message.text.lower() == 'баланс':
+        environ['addr'] = str(message.chat.id)
         check_balance(message, bot)
         return
+
+    elif message.text.lower() == 'статус':
+        print(Fore.MAGENTA + 'DEBUG: status')
+        bot.send_message(message.chat.id, 'Твой ID: ' + str(message.chat.id))
+
+    #-------------------------------------------------------------------
     if message.text.lower() == 'перевести':
+        environ['addr'] = str(message.chat.id)
+        environ['help var'] = str(message.chat.id)
+
         create_order_step1(message, bot)
+        print(Fore.MAGENTA + environ.get("help var"))
+        print(Fore.MAGENTA + environ.get("addr"))
+        print(Fore.MAGENTA + environ.get("status"))
+
         return
-    if environ.get('status') == 'waiting for id':
+    if environ.get('status') == 'waiting for id' and environ.get("help var") == str(message.chat.id):
+        print(Fore.MAGENTA + 'TEST')
+        environ['addr'] = str(message.chat.id)
         try:
             create_order_step2(message, bot)
         except Exception as e:
             bot.send_message(message.chat.id, e, parse_mode='Markdown')
         return
-    if environ.get('status') == 'waiting for id.step2':
+    if environ.get('status') == 'waiting for id.step2' and environ.get("help var") == str(message.chat.id):
+        environ['addr'] = str(message.chat.id)
         try:
             create_order_step3(message, bot)
         except Exception as e:
             bot.send_message(message.chat.id, e, parse_mode='Markdown')
         return
+    #-------------------------------------------------------------------
+
+
 print(Fore.GREEN + 'Директива для сообщений (Основной файл): Успех')
 
 #Хендлер на Callback`и
@@ -117,7 +136,7 @@ def callback_inline(call):
         except Exception as e:
             bot.send_message(int(environ.get('addr')), e, parse_mode='Markdown')
             return
-        bot.send_message(int(environ.get('addr')), 'Готово! \nOrder создан, подробнее - /orders')
+        bot.send_message(int(environ.get('addr')), 'Готово! \nOrder создан')
     #elif call.data == 'yes.order':
     #    global id
     #    global amount

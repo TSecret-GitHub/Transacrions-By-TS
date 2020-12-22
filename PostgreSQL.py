@@ -74,24 +74,21 @@ def create_order_BD(from_order, to_order, amount):
         print(Fore.MAGENTA + 'DEBUG: \nrecord:' + record + '\ncursor:' + debug_var)
         raise Exception('Вы не подтверждены!')
 
-    debug_var = cursor.execute("SELECT balance FROM transactions_by_ts.users WHERE id = '{id}'".format(id=to_order))
+    cursor.execute("SELECT balance FROM transactions_by_ts.users WHERE id = '{id}'".format(id=to_order))
     record_to = cursor.fetchone()
     if record_to == None:
         print(Fore.RED + 'Ошибка: невозможно выполнить транзакцию, получателя НЕ существует')
-        print(Fore.MAGENTA + 'DEBUG: \nrecord_to:' + record_to + '\ncursor:' + debug_var)
         raise Exception('Невозможно выполнить транзакцию, получателя *НЕ* существует')
         return
 
-    print(Fore.MAGENTA + str(record) + '- record')
-    if record[0]:
+    if not record[0]:
         print(Fore.RED + 'Ошибка: баланс получателя отрицателен')
-        print(Fore.MAGENTA + 'DEBUG: \nrecord_to:' + record[0])
-        raise Exception('Ваш баланс орицателен `=(`)')
+        print(Fore.MAGENTA + 'DEBUG: \nrecord_to:' + str(record[0]))
+        raise Exception('Ваш баланс орицателен `=(`')
         return
 
-    if record[0] - amount:
+    if not record[0] - amount:
         print(Fore.RED + 'Ошибка: На балансе недостаточно Логиков')
-        print(Fore.MAGENTA + 'DEBUG: \nrecord_to:' + record[0])
         raise Exception('На вашем балансе недостаточно логиков `=(`)')
         return
 
