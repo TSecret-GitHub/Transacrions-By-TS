@@ -9,7 +9,7 @@ print(Fore.GREEN + 'Импорт модулей (config.py): Успех')
 dbname = os.environ.get('dbname')
 user = os.environ.get('user')
 password = os.environ.get('password')
-os.environ['SECRET_TOKEN'] = 'Сюда токен'
+os.environ['SECRET_TOKEN'] = os.environ('SECRET_TOKEN')
 os.environ['name'] = 'None'
 os.environ['username'] = 'None'
 os.environ['superadmin'] = '799637030'
