@@ -1,6 +1,7 @@
 #Импорт всех нужных файлов
 import telebot
 import sys
+from config import superadmin
 from Keyboards import menu, admin_keyboard, yesNo, yesNo_for_order, confirm
 import PostgreSQL
 from os import environ
@@ -16,6 +17,8 @@ sys.setrecursionlimit(1000000)
 # | Вызывается для получения имени
 # |-------continue_text-------|
 def continue_text(message, bot):
+    global confirm_message
+
     environ['name'] = message.text
     environ['username'] = str(message.from_user.username)
 
@@ -24,9 +27,9 @@ def continue_text(message, bot):
         return
 
     #print(type(addr))
-    PostgreSQL.register(int(message.chat.id), environ.get('name'))
+    PostgreSQL.register(int(message.chat.id), environ.get('name'), environ.get('username'))
     bot.send_message(int(message.chat.id), 'Думаю все... \nОжидай когда тебя подтвердят...', reply_markup=menu)
-    bot.send_message(int(environ.get('superadmin')), 'Подтвердить пользователя: \nОтправлено: @' + environ.get('username'), reply_markup=confirm)
+    bot.send_message(superadmin[0], 'Подтвердить пользователя: \nОтправлено: @' + environ.get('username'), reply_markup=confirm)
     environ['status'] = 'None'
 print(Fore.GREEN + 'Создание continue_text() (waiting_for_name.py): Успех')
 
@@ -74,19 +77,16 @@ def check_balance(message, bot):
 print(Fore.GREEN + 'Создание check_balance() (waiting_for_name.py): Успех')
 
 def create_order_step1(message, bot):
-    bot.send_message(message.chat.id, 'Введите id адресата ...')
+    bot.send_message(message.chat.id, 'Введите username(Без "@") адресата ...')
 
     environ['status'] = 'waiting for id'
 print(Fore.GREEN + 'Создание create_order_step1() (waiting_for_name.py): Успех')
 
 def create_order_step2(message, bot):
-    environ['id'] = message.text
-
     try:
-        int(environ.get('id'))
-    except:
-        print(Fore.RED + 'Ошибка: ID состоит не только из цифр')
-        raise Exception('Ну, а так-то здесь, _(пока-что)_, *должны* быть цифры')
+        environ['id'] = str(PostgreSQL.ID_from_username(message.text))
+    except Exception as e:
+        bot.send_message(message.chat.id, e, parse_mode='Markdown')
 
     bot.send_message(message.chat.id, 'Введите количество логиков ...')
     environ['status'] = 'waiting for id.step2'
@@ -101,7 +101,7 @@ def create_order_step3(message, bot):
         print(Fore.RED + 'Ошибка: amount состоит не только из цифр')
         raise Exception('Ну, а так-то здесь *должны* быть цифры')
 
-    bot.send_message(message.chat.id, 'Все верно?: \nОтправить на: ' + environ.get('id') + '\nКоличество: ' + environ.get('amount'), reply_markup=yesNo_for_order)
+    bot.send_message(message.chat.id, 'Все верно?: \nОтправить на (Подставлено на основе username): ' + environ.get('id') + '\nКоличество: ' + environ.get('amount'), reply_markup=yesNo_for_order)
     environ['status'] = 'None'
     #print(environ.get('status'))
 print(Fore.GREEN + 'Создание create_order_step3() (waiting_for_name.py): Успех')

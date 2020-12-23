@@ -2,8 +2,7 @@
 ![](https://img.shields.io/badge/license-AGPL--3.0-green)
 ![](https://img.shields.io/badge/version-0.0.2-yellow)
 ![](https://img.shields.io/badge/platform-telegram-blue)
-![CodeFactor](https://www.codefactor.io/repository/github/tsecret-github/transacrions-by-ts/badge/not-tested)](https://www.codefactor.io/repository/github/tsecret-github/transacrions-by-ts/overview/not-tested)
-![CodeFactor](https://www.codefactor.io/repository/github/tsecret-github/transacrions-by-ts/badge)](https://www.codefactor.io/repository/github/tsecret-github/transacrions-by-ts)
+[![CodeFactor](https://www.codefactor.io/repository/github/tsecret-github/transacrions-by-ts/badge/not-tested)](https://www.codefactor.io/repository/github/tsecret-github/transacrions-by-ts/overview/not-tested)
 
 __(Если вам что-то не понятно или у вас что-то не так пишите в Issuies)__
 # Настройка
@@ -105,12 +104,17 @@ CREATE TABLE transactions_by_ts.users
 Вот все что я могу дать: [ссылка](https://bit.ly/3mDGdoe)
 
 ### Продолжим настройку, теперь ввод данных
-Зайдите в файл `config.py`, строка 9 или где возле нее будет строка `os.environ['SECRET_TOKEN'] = 'Сюда токен'`. Получите токет у `@BotFather` и вставте на место текста.
+Введите в терминал `export SECRET_TOKEN='Токен бота'`. Получите токет у `@BotFather` и вставте на место текста.
 > Как создать бота через Botfather?
 > Для создания бота введите в чат с BotFather команду /newbot. Бот попросит вас ввести название для нового бота. Можете указать в любом удобном формате, поддерживается кириллица и латиница, например: «тестовый bot». — Имя будет отображаться в заголовке и в информации о боте.
 [Сайт](https://botcreators.ru/blog/kak-sozdat-svoego-bota-v-botfather/#:~:text=%D0%94%D0%BB%D1%8F%20%D1%81%D0%BE%D0%B7%D0%B4%D0%B0%D0%BD%D0%B8%D1%8F%20%D0%B1%D0%BE%D1%82%D0%B0%20%D0%B2%D0%B2%D0%B5%D0%B4%D0%B8%D1%82%D0%B5%20%D0%B2,%D0%B8%20%D0%B2%20%D0%B8%D0%BD%D1%84%D0%BE%D1%80%D0%BC%D0%B0%D1%86%D0%B8%D0%B8%20%D0%BE%20%D0%B1%D0%BE%D1%82%D0%B5.)
 
-Потом строка 19-21: вводите данные сервера(сервер `localhost`)
+~~Потом строка 19-21: вводите данные сервера(сервер `localhost`)~~
+После обновления безопасности:
+1. Перейдите в папку проекта
+2. Введите в терминал `export dbname='Имя базы данных'`
+3. Введите в терминал `export user='Имя пользователя'`
+4. Введите в терминал `export password='Пароль пользователя'`
 
 ### Зависимости
 ```bash

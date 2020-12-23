@@ -5,10 +5,10 @@ init(autoreset=True)
 
 print(Fore.GREEN + 'Импорт модулей (PostgreSQL.py): Успех')
 
-def register(id, name):
+def register(id, name, username):
     #INSERT INTO Transactions_By_TS.users (id, name, balance) VALUES (1, 'test', 25)
 
-    cursor.execute("INSERT INTO Transactions_by_ts.users (id, name) VALUES ('{id}', '{name}')".format(id=id, name=name))
+    cursor.execute("INSERT INTO Transactions_by_ts.users (id, name, username) VALUES ('{id}', '{name}', '{username}')".format(id=id, name=name, username=username))
     conn.commit()
 print(Fore.GREEN + 'Функция register() создана (PostgreSQL.py): Успех')
 
@@ -73,16 +73,16 @@ def create_order_BD(from_order, to_order, amount):
         return
 
     print(Fore.MAGENTA + str(record) + '- record')
-    if record[0]:
+    if record[0] is True:
         print(Fore.RED + 'Ошибка: баланс получателя отрицателен')
-        print(Fore.MAGENTA + 'DEBUG: \nrecord_to:' + record[0])
+        print(Fore.MAGENTA + 'DEBUG: \nrecord_to:' + str(record[0]))
         raise Exception('Ваш баланс орицателен `=(`)')
         return
 
-    if record[0] - amount:
+    if record[0] - amount is True:
         print(Fore.RED + 'Ошибка: На балансе недостаточно Логиков')
-        print(Fore.MAGENTA + 'DEBUG: \nrecord_to:' + record[0])
-        raise Exception('На вашем балансе недостаточно логиков `=(`)')
+        print(Fore.MAGENTA + 'DEBUG: \nrecord_to:' + str(record[0]))
+        raise Exception('На вашем балансе недостаточно логиков `=(`')
         return
 
     cursor.execute("UPDATE transactions_by_ts.users SET balance = '{balance}' WHERE id = '{id}'".format(balance=record[0] - amount, id=from_order))
@@ -91,3 +91,52 @@ def create_order_BD(from_order, to_order, amount):
 
     conn.commit()
 print(Fore.GREEN + 'Функция create_order_BD() создана (PostgreSQL.py): Успех')
+
+def add_logics(id, amount):
+    cursor.execute("SELECT balance FROM transactions_by_ts.users WHERE id = '{id}'".format(id=id))
+    record = cursor.fetchone()
+
+    if record is None:
+        print(Fore.RED + 'Ошибка: Записи не существует')
+        raise Exception('ID *не* существует!')
+
+    cursor.execute("UPDATE transactions_by_ts.users SET balance = '{balance}' WHERE id = '{id}'".format(balance=record[0]+int(amount), id=id))
+
+    conn.commit()
+
+def ID_from_username(username):
+    cursor.execute("SELECT id FROM transactions_by_ts.users WHERE username = '{username}'".format(username=username))
+    record = cursor.fetchone()
+
+    if record is None:
+        print(Fore.RED + 'Ошибка: Записи не существует!')
+        raise Exception('Такого username нет в Базе Данных')
+        return
+
+    return record[0]
+
+def minus_logiks(id, amount):
+    cursor.execute("SELECT balance FROM transactions_by_ts.users WHERE id = '{id}'".format(id=id))
+    record = cursor.fetchone()
+
+    if record is None:
+        print(Fore.RED + 'Ошибка: Записи не существует')
+        raise Exception('Такого username нет в Базе Данных')
+        return
+
+    cursor.execute("UPDATE transactions_by_ts.users SET balance = '{balance}' WHERE id = '{id}'".format(balance=record[0]-amount, id=id))
+    conn.commit()
+
+def program_participants():
+    cursor.execute("SELECT * FROM transactions_by_ts.users")
+    records = cursor.fetchall()
+
+    i = 0
+    while i < len(records):
+        print('-------------------------')
+        print(records[i][1] + ':', '\nID:',  records[i][0], '\nБаланс:', records[i][2], '\nUsername: @' + records[i][4])
+        print('-------------------------')
+        i += 1
+    return records
+
+program_participants()

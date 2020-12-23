@@ -5,6 +5,7 @@ from colorama import init, Fore
 from telebot import types
 from Keyboards import menu, confirm, yesNo, yesNo_for_order1, admin_keyboard
 import PostgreSQL
+from config import superadmin, is_superadmin
 from waiting_for_name import continue_text, callback_handler_step2, check_balance, create_order_step1, create_order_step2, create_order_step3
 import time
 from os import environ
@@ -24,6 +25,7 @@ print(Fore.GREEN + 'Создание переменных (Основной фа
 @bot.message_handler(commands=['start'])
 def start_message(message):
     environ['status'] = 'None'
+    environ['username'] = message.from_user.username
 
     bot.send_message(message.chat.id, 'Привет, начнем! \nЗарегистрируйся ==>')
     bot.send_message(message.chat.id, 'Напиши имя')
@@ -41,20 +43,25 @@ def update_superadmin_chat_id(message):
     print(Fore.MAGENTA + 'DEBUG: Chat ID: ' + str(message.chat.id))
     print(Fore.MAGENTA + 'DEBUG: Username: ' + message.from_user.username)
 
-    environ['superadmin'] = str(message.chat.id)
-    print(Fore.MAGENTA + 'DEBUG: Superadmin переназначен: ' + environ.get('superadmin'))
+    superadmin.append(message.chat.id)
+    print(Fore.MAGENTA + 'DEBUG: Superadmin переназначен: ' + superadmin)
 
     bot.send_message(message.chat.id, 'Обновлено!')
 
-#@bot.message_handler(commands=['get_admin.on', 'get_admin.off'])
-#def get_admin(message):
-#    if str(message.chat.id) == environ.get('superadmin') and message.text == '/get_admin.on':
-#        environ['SMH'] = 'True'
-#        bot.send_message(message)
-#    else:
-#        print(Fore.YELLOW + 'WARNING: отклонён запрос get_admin.on, подробности: @' + str(message.from_user.username))
-#        bot.send_message(message.chat.id, 'Забавно что ты сюда попал :) \nНо, я тебя не дам использовать эту команду, она не для тебя... \nПросто забудь об этом. \nИтак, Я збрасываю функцию \nВсе еще странно то, что ты смог дойти хоть сюда =)', parse_mode='Markdown')
-#        return
+@bot.message_handler(commands=['get_admin.on', 'get_admin.off'])
+def get_admin(message):
+    if  is_superadmin(message.chat.id) and message.text == '/get_admin.on':
+        environ['SMH'] = 'True'
+        bot.send_message(message.chat.id, 'Это инструкция, но её нет. Мне просто было лень её писать...')
+        bot.send_message(message.chat.id, 'Отправляю клавиатуру...', reply_markup=admin_keyboard)
+
+    elif is_superadmin(message.chat.id) and message.text == '/get_admin.off':
+        environ['SMH'] = 'False'
+        bot.send_message(message.chat.id, '')
+    else:
+        print(Fore.YELLOW + 'WARNING: отклонён запрос get_admin.on, подробности: @' + str(message.from_user.username))
+        bot.send_message(message.chat.id, 'Забавно что ты сюда попал :) \nНо, я тебя не дам использовать эту команду, она не для тебя... \nПросто забудь об этом. \nИтак, Я збрасываю функцию \nВсе еще странно то, что ты смог дойти хоть сюда =)', parse_mode='Markdown')
+        return
 
 #Хендлер для команды //service.command_to_update
 print(Fore.GREEN + 'Директива для команды //service.command_to_update (Основной файл): Успех')
@@ -62,12 +69,99 @@ print(Fore.GREEN + 'Директива для команды //service.command_t
 #Основной хендлер который направляет сообщения по функциям
 @bot.message_handler(content_types=['text'])
 def content_types_text(message):
+    if environ.get('SMH') == 'True':
+        if message.text.lower() == 'добавить логики':
+            environ['status'] = 'добавить логики'
+            environ['SMH help'] = str(message.chat.id)
+
+            bot.send_message(message.chat.id, 'Введите количество:')
+        elif message.text.lower() == 'отнять логики':
+            environ['status'] = 'отнять логики'
+            environ['SMH help'] = str(message.chat.id)
+
+            bot.send_message(message.chat.id, 'Введите количество:')
+
+        elif environ.get('status') == 'отнять логики' and environ.get('SMH help') == str(message.chat.id):
+            try:
+                int(message.text)
+            except ValueError:
+                bot.send_message(message.chat.id, 'Цифры!')
+                return
+
+            environ['status'] = 'отнять логики.1'
+            environ['SMH amount'] = str(message.text)
+
+            bot.send_message(message.chat.id, 'Введите username(Без знака "@") получателя:')
+
+        elif environ.get('status') == 'отнять логики.1' and environ.get('SMH help') == str(message.chat.id):
+            try:
+                ID = PostgreSQL.ID_from_username(message.text)
+            except Exception as e:
+                bot.send_message(message.chat.id, e, parse_mode='Markdown')
+
+            try:
+                PostgreSQL.minus_logiks(ID, int(environ.get('SMH amount')))
+            except Exception as e:
+                bot.send_message(message.chat.id, e, parse_mode='Markdown')
+            bot.send_message(message.chat.id, 'Готово!', parse_mode='Markdown')
+
+            environ['status'] = 'None'
+        elif message.text.lower() == 'заблокировать':
+            environ['status'] = 'заблокировать'
+            environ['SMH help'] = str(message.text.id)
+
+            bot.send_message(message.chat.id, 'Введите username(Без знака "@"):')
+
+        elif environ.get('status') == 'заблокировать' and environ.get('SMH help') == str(message.chat.id):
+            try:
+                ID = PostgreSQL.ID_from_username(message.text)
+            except Exception as e:
+                bot.send_message(message.chat.id, e, parse_mode='Markdown')
+
+            PostgreSQL.block(ID)
+            bot.send_message(message.chat.id, 'Готово!', parse_mode='Markdown')
+            environ['status'] = 'None'
+
+        elif message.text.lower() == 'участники этой программы':
+            records = PostgreSQL.program_participants()
+
+            i = 0
+            while i < len(records):
+                bot.send_message(message.chat.id, str(records[i][1]) + ':' + '\nID: ' + str(records[i][0]) + '\nБаланс: ' + str(records[i][2]) + '\nUsername: @' + str(records[i][4]))
+                i += 1
+        elif environ.get('status') == 'добавить логики' and environ.get('SMH help') == str(message.chat.id):
+            try:
+                int(message.text)
+            except ValueError:
+                bot.send_message(message.chat.id, 'Цифры!')
+                return
+
+            environ['SMH amount'] = str(message.text)
+            environ['status'] = 'добавить логики.1'
+
+            bot.send_message(message.chat.id, 'Введите username(Без знака "@") получателя:')
+        elif environ.get('status') == 'добавить логики.1' and environ.get('SMH help') == str(message.chat.id):
+            try:
+                ID = PostgreSQL.ID_from_username(message.text)
+            except Exception as e:
+                bot.send_message(message.chat.id, e, parse_mode='Markdown')
+            environ['SMH id'] = str(message.text)
+            environ['status'] = 'добавить логики.2'
+
+            try:
+                PostgreSQL.add_logics(ID, environ.get('SMH amount'))
+            except Exception as e:
+                bot.send_message(message.chat.id, e, parse_mode='Markdown')
+            bot.send_message(message.chat.id, 'Готово!')
+
+            environ['status'] = 'None'
+
     if environ.get('status') == 'waiting for name':
         print(Fore.LIGHTMAGENTA_EX + 'INFO: Начата регистрация')
         environ['addr'] = str(message.chat.id)
         continue_text(message, bot)
         return
-    elif str(message.chat.id) == environ.get('superadmin') and environ.get('status') == 'waiting for balance.step1':
+    elif is_superadmin(message.chat.id) and environ.get('status') == 'waiting for balance.step1':
         try:
             callback_handler_step2(message, bot)
         except Exception as e:
@@ -119,18 +213,18 @@ print(Fore.GREEN + 'Директива для сообщений (Основно
 def callback_inline(call):
     if call.data == "confirm":
         environ['status'] = 'waiting for balance.step1'
-        bot.send_message(int(environ.get('superadmin')), 'Balance')
+        bot.send_message(superadmin[0], 'Balance')
 
     elif call.data == 'cancel':
         bot.send_message(int(environ.get('addr')), 'Вас отклонили, повторить?', reply_markup=yesNo)
 
     elif call.data == 'yes':
         bot.send_message(int(environ.get('addr')), 'Отправлено...', reply_markup=menu)
-        bot.send_message(int(environ.get('superadmin')), 'Подтвердить пользователя: \nОтправлено: @' + environ.get('username') + '\nПовторная отправка...', reply_markup=confirm)
+        bot.send_message(superadmin[0], 'Подтвердить пользователя: \nОтправлено: @' + environ.get('username') + '\nПовторная отправка...', reply_markup=confirm)
 
     elif call.data == 'no':
         bot.edit_message_text(chat_id=int(environ.get('addr')), message_id=call.message.message_id, text="Ну и ладно...")
-        bot.answer_callback_query(callback_query_id=call.id, show_alert=True, text="Ну и ладно...")
+        bot.answer_callback_query(callback_query_id=call.id, show_alert=False, text="Ну и ладно...")
 
     elif call.data == 'block':
         PostgreSQL.block(int(environ.get('addr')), False)

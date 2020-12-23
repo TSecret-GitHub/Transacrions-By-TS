@@ -34,7 +34,7 @@ print(Fore.GREEN + 'Создана клавиатура yesNo_for_order (Keyboar
 
 admin_keyboard = types.ReplyKeyboardMarkup(True, True)
 admin_keyboard.row('Добавить Логики', 'Отнять Логики')
-admin_keyboard.row('Отправить коментарий(С ответом)', 'Отправить коментарий(Без ответа)')
+admin_keyboard.row('Участники этой программы', '---')
 admin_keyboard.row('Заблокировать')
 print(Fore.GREEN + 'Создана клавиатура admin_keyboard (Keyboards.py): Успех')
 
