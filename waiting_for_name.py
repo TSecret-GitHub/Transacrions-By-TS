@@ -2,7 +2,7 @@
 import telebot
 import sys
 from config import superadmin
-from Keyboards import menu, admin_keyboard, yesNo, yesNo_for_order, confirm
+from Keyboards import menu, yesNo, yesNo_for_order, confirm
 import PostgreSQL
 from os import environ
 from colorama import init, Fore
@@ -67,7 +67,7 @@ print(Fore.GREEN + 'Создание callback_handler_step2() (waiting_for_name.
 def check_balance(message, bot):
     #if message.text.lower() == 'баланс':
     balance = PostgreSQL.balance(message.chat.id)
-    test_balance = PostgreSQL.balance(message.chat.id, True)
+    PostgreSQL.balance(message.chat.id, True)
 
     if PostgreSQL.balance(message.chat.id, True) is True:
         bot.send_message(message.chat.id, 'Вы не подтверждены!')
