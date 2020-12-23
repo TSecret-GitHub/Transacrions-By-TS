@@ -17,8 +17,6 @@ sys.setrecursionlimit(1000000)
 # | Вызывается для получения имени
 # |-------continue_text-------|
 def continue_text(message, bot):
-    global confirm_message
-
     environ['name'] = message.text
     environ['username'] = str(message.from_user.username)
 
