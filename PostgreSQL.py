@@ -1,7 +1,9 @@
 import psycopg2
-from config import cursor, conn
+from config import cursor, conn, FORMATTER, LOG_FILE, FORMATTER_FILE, get_console_handler, get_file_handler, get_logger
 from colorama import init, Fore
 init(autoreset=True)
+
+log = get_logger('pgsql')
 
 print(Fore.GREEN + 'Импорт модулей (PostgreSQL.py): Успех')
 
@@ -60,28 +62,28 @@ def create_order_BD(from_order, to_order, amount):
     debug_var = cursor.execute("SELECT balance FROM transactions_by_ts.users WHERE id = '{id}'".format(id=from_order))
     record = cursor.fetchone()
     if record is None:
-        print(Fore.RED + 'Ошибка: невозможно выполнить транзакцию, отправителя НЕ существует')
-        print(Fore.MAGENTA + 'DEBUG: \nrecord:' + record + '\ncursor:' + debug_var)
+        log.error(Fore.RED + 'Невозможно выполнить транзакцию, отправителя НЕ существует')
+        log.debug(Fore.MAGENTA + 'record:' + record + '\n>cursor:' + debug_var)
         raise Exception('Вы не подтверждены!')
 
     debug_var = cursor.execute("SELECT balance FROM transactions_by_ts.users WHERE id = '{id}'".format(id=to_order))
     record_to = cursor.fetchone()
     if record_to is None:
-        print(Fore.RED + 'Ошибка: невозможно выполнить транзакцию, получателя НЕ существует')
-        print(Fore.MAGENTA + 'DEBUG: \nrecord_to:' + record_to + '\ncursor:' + debug_var)
+        log.error(Fore.RED + 'Невозможно выполнить транзакцию, получателя НЕ существует')
+        log.debug(Fore.MAGENTA + 'record_to:' + record_to + '\ncursor:' + debug_var)
         raise Exception('Невозможно выполнить транзакцию, получателя *НЕ* существует')
         return
 
-    print(Fore.MAGENTA + str(record) + '- record')
+    log.debug(Fore.MAGENTA + str(record) + '- record')
     if record[0] is True:
-        print(Fore.RED + 'Ошибка: баланс получателя отрицателен')
-        print(Fore.MAGENTA + 'DEBUG: \nrecord_to:' + str(record[0]))
+        log.error(Fore.RED + 'Баланс получателя отрицателен')
+        log.debug(Fore.MAGENTA + 'record_to:' + str(record[0]))
         raise Exception('Ваш баланс орицателен `=(`)')
         return
 
     if record[0] - amount is True:
-        print(Fore.RED + 'Ошибка: На балансе недостаточно Логиков')
-        print(Fore.MAGENTA + 'DEBUG: \nrecord_to:' + str(record[0]))
+        log.error(Fore.RED + 'На балансе недостаточно Логиков')
+        log.debug(Fore.MAGENTA + 'record_to:' + str(record[0]))
         raise Exception('На вашем балансе недостаточно логиков `=(`')
         return
 
@@ -97,7 +99,7 @@ def add_logics(id, amount):
     record = cursor.fetchone()
 
     if record is None:
-        print(Fore.RED + 'Ошибка: Записи не существует')
+        log.error(Fore.RED + 'Записи не существует')
         raise Exception('ID *не* существует!')
 
     cursor.execute("UPDATE transactions_by_ts.users SET balance = '{balance}' WHERE id = '{id}'".format(balance=record[0]+int(amount), id=id))
@@ -109,7 +111,7 @@ def ID_from_username(username):
     record = cursor.fetchone()
 
     if record is None:
-        print(Fore.RED + 'Ошибка: Записи не существует!')
+        log.error(Fore.RED + 'Записи не существует')
         raise Exception('Такого username нет в Базе Данных')
         return
 
@@ -120,7 +122,7 @@ def minus_logiks(id, amount):
     record = cursor.fetchone()
 
     if record is None:
-        print(Fore.RED + 'Ошибка: Записи не существует')
+        log.error(Fore.RED + 'Записи не существует')
         raise Exception('Такого username нет в Базе Данных')
         return
 
@@ -131,12 +133,4 @@ def program_participants():
     cursor.execute("SELECT * FROM transactions_by_ts.users")
     records = cursor.fetchall()
 
-    i = 0
-    while i < len(records):
-        print('-------------------------')
-        print(records[i][1] + ':', '\nID:',  records[i][0], '\nБаланс:', records[i][2], '\nUsername: @' + records[i][4])
-        print('-------------------------')
-        i += 1
     return records
-
-program_participants()

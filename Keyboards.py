@@ -1,5 +1,6 @@
 from telebot import types
 from colorama import Fore, init
+from config import FORMATTER, LOG_FILE, FORMATTER_FILE, get_console_handler, get_file_handler, get_logger
 init(autoreset=True)
 
 print(Fore.GREEN + 'Импорт модулей (Keyboards.py): Успех')
@@ -37,6 +38,13 @@ admin_keyboard.row('Добавить Логики', 'Отнять Логики')
 admin_keyboard.row('Участники этой программы', '---')
 admin_keyboard.row('Заблокировать')
 print(Fore.GREEN + 'Создана клавиатура admin_keyboard (Keyboards.py): Успех')
+
+SCP_5000_keyboard = types.InlineKeyboardMarkup()
+SCP_5000_keyboard1 = types.InlineKeyboardButton(text="Да", callback_data="yes.scp")
+SCP_5000_keyboard2 = types.InlineKeyboardButton(text="Нет", callback_data="no.scp")
+SCP_5000_keyboard.add(SCP_5000_keyboard1)
+SCP_5000_keyboard.add(SCP_5000_keyboard2)
+print(Fore.GREEN + 'Создана клавиатура SCP_5000_keyboard (Keyboards.py): Успех')
 
 #not confirmed = types.InlineKeyboardMarkup()
 
