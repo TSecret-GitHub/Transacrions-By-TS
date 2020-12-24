@@ -37,6 +37,13 @@ def start_message(message):
 #-Хендлер для команды /start
 print(Fore.GREEN + 'Директива для команды /start (Основной файл): Успех')
 
+#Хендлер для команды /donate
+@bot.message_handler(commands=['donate'])
+def DONATE(message):
+    bot.send_message(message.chat.id, 'Вау! Ты написал это! \nСпасибо, вот [ссылка](https://www.patreon.com/tsecret) на мой *Patreon*. \nЕсли на Spotify, то выбирай план за $5 \n`:D`', parse_mode='Markdown')
+#-Хендлер для команды /start
+print(Fore.GREEN + 'Директива для команды /start (Основной файл): Успех')
+
 #Хендлер для команды //service.command_to_update
 @bot.message_handler(commands=[command_to_update])
 def update_superadmin_chat_id(message):
