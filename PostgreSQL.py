@@ -50,6 +50,11 @@ def balance(id, question=False):
 print(Fore.GREEN + 'Функция balance() создана (PostgreSQL.py): Успех')
 
 def create_order_BD(from_order, to_order, amount):
+    if amount < 0:
+        log.error(Fore.RED + 'Игра со знаками')
+        log.debug(Fore.MAGENTA + 'amount:' + str(amount))
+        raise Exception('Игра со знаками не для тебя`...`')
+        return
     #INSERT INTO transactions_by_ts.orders (from_order, to_order, amount) VALUES (1, 2, 3)
 
     #print(from_order, '- from_order')

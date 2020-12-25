@@ -58,7 +58,7 @@ def callback_handler_step2(message, bot):
         log.error(Fore.RED + 'Баланс не целое число, повтор...')
         raise Exception('Это должно быть *целым* числом!')
     log.debug(environ.get('addr'))
-    PostgreSQL.confirm(int(environ.get('addr')), message.text)
+    PostgreSQL.confirm(int(environ.get('addr')), balance)
     #print('confirm OK')
     bot.send_message(int(environ.get('addr')), 'Вы были подтверждены!')
     #print('send_message OK')

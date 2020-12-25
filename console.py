@@ -44,5 +44,10 @@ while console != 'exit':
         except Exception as e:
             print(e)
     
+    elif console[:2] = 'ban':
+        ID = console[3:] 
+        
+        PostgreSQL.block(ID)
+    
     console = input('~/> ')
         

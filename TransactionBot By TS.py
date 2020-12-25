@@ -5,7 +5,6 @@ from colorama import init, Fore
 from telebot import types
 from Keyboards import menu, confirm, yesNo, yesNo_for_order1, admin_keyboard
 import PostgreSQL
-from threading import Thread
 from config import superadmin, is_superadmin, FORMATTER, LOG_FILE, FORMATTER_FILE, get_console_handler, get_file_handler, get_logger
 from waiting_for_name import continue_text, callback_handler_step2, check_balance, create_order_step1, create_order_step2, create_order_step3, scp_5000
 import time
@@ -197,7 +196,8 @@ def content_types_text(message):
         try:
             callback_handler_step2(message, bot)
         except Exception as e:
-            log.error(Fore.RED + 'Добавить логики: \n   >Exception: ' + e)
+            #print(e)
+            #log.error(Fore.RED + 'Добавить логики: \n   >Exception: ' + str(e))
             bot.send_message(message.chat.id, e, parse_mode='Markdown')
 
         return
