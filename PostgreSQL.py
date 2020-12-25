@@ -22,7 +22,6 @@ def confirm(id, balance):
 print(Fore.GREEN + 'Функция confirm() создана (PostgreSQL.py): Успех')
 
 def block(id, question):
-
     if question is True:
         cursor.execute("SELECT * FROM transactions_by_ts.users WHERE id = '{id}'".format(id=id))
         record = cursor.fetchone()
@@ -75,13 +74,13 @@ def create_order_BD(from_order, to_order, amount):
         return
 
     log.debug(Fore.MAGENTA + str(record) + '- record')
-    if record[0] is True:
+    if record[0] < 0:
         log.error(Fore.RED + 'Баланс получателя отрицателен')
         log.debug(Fore.MAGENTA + 'record_to:' + str(record[0]))
         raise Exception('Ваш баланс орицателен `=(`)')
         return
 
-    if record[0] - amount is True:
+    if record[0] - amount < 0:
         log.error(Fore.RED + 'На балансе недостаточно Логиков')
         log.debug(Fore.MAGENTA + 'record_to:' + str(record[0]))
         raise Exception('На вашем балансе недостаточно логиков `=(`')

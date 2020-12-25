@@ -57,6 +57,7 @@ def callback_handler_step2(message, bot):
     except ValueError:
         log.error(Fore.RED + 'Баланс не целое число, повтор...')
         raise Exception('Это должно быть *целым* числом!')
+    log.debug(environ.get('addr'))
     PostgreSQL.confirm(int(environ.get('addr')), message.text)
     #print('confirm OK')
     bot.send_message(int(environ.get('addr')), 'Вы были подтверждены!')
@@ -87,6 +88,7 @@ def create_order_step2(message, bot):
         environ['id'] = str(PostgreSQL.ID_from_username(message.text))
     except Exception as e:
         bot.send_message(message.chat.id, e, parse_mode='Markdown')
+        return
 
     bot.send_message(message.chat.id, 'Введите количество логиков ...')
     environ['status'] = 'waiting for id.step2'

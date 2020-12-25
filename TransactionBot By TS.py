@@ -5,6 +5,7 @@ from colorama import init, Fore
 from telebot import types
 from Keyboards import menu, confirm, yesNo, yesNo_for_order1, admin_keyboard
 import PostgreSQL
+from threading import Thread
 from config import superadmin, is_superadmin, FORMATTER, LOG_FILE, FORMATTER_FILE, get_console_handler, get_file_handler, get_logger
 from waiting_for_name import continue_text, callback_handler_step2, check_balance, create_order_step1, create_order_step2, create_order_step3, scp_5000
 import time
@@ -82,7 +83,12 @@ print(Fore.GREEN + 'Директива для команды //service.command_t
 #Основной хендлер который направляет сообщения по функциям
 @bot.message_handler(content_types=['text'])
 def content_types_text(message):
-    environ['addr'] = str(message.chat.id)
+    if is_superadmin(message.chat.id) is False:
+        log.debug(str(message.chat.id))
+        environ['addr'] = str(message.chat.id)
+    if PostgreSQL.block(int(environ.get('addr')), True) is True:
+        bot.send_message(int(environ.get('addr')), 'Вы *заблокированы*!', parse_mode='Markdown')
+        return
 
     if environ.get('SMH') == 'True':
         if message.text.lower() == 'добавить логики':
@@ -126,7 +132,7 @@ def content_types_text(message):
             environ['status'] = 'None'
         elif message.text.lower() == 'заблокировать':
             environ['status'] = 'заблокировать'
-            environ['SMH help'] = str(message.text.id)
+            environ['SMH help'] = str(message.chat.id)
 
             bot.send_message(message.chat.id, 'Введите username(Без знака "@"):')
 
@@ -297,7 +303,7 @@ print('\n')
 try:
     bot.polling(none_stop=True)
 except Exception as e:
-    #log.error(Fore.RED + e)
+    log.error(Fore.RED + str(e))
     log.info(Fore.GREEN + 'Переподключение...')
 
     bot.polling(none_stop=True)
