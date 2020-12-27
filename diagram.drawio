@@ -1,1 +1,907 @@
-<mxfile host="app.diagrams.net" modified="2020-12-26T20:59:41.792Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.75 Safari/537.36" etag="NBmJIIT1mQ4uO55sVP3Q" version="14.1.2" type="github"><diagram id="l6JmE9hUUsiGH81pdTk3" name="Page-1">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</diagram></mxfile>
+<mxfile host="app.diagrams.net" modified="2020-12-27T07:13:05.280Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.75 Safari/537.36" etag="psWC5Fr6jeb5hm2Pj98r" version="14.1.2" type="github">
+  <diagram id="l6JmE9hUUsiGH81pdTk3" name="Page-1">
+    <mxGraphModel dx="5156" dy="1709" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <UserObject label="Класс config" lucidchartObjectId="hDQ0U4UAs6aH" id="xtyEx_gyL_2J196OI3PX-1">
+          <mxCell style="html=1;overflow=block;blockSpacing=1;whiteSpace=wrap;;whiteSpace=wrap;fontSize=13;fontColor=#333333;spacing=3;strokeColor=#5e5e5e;strokeOpacity=100;rounded=1;absoluteArcSize=1;arcSize=7;strokeWidth=2;" parent="1" vertex="1">
+            <mxGeometry width="108" height="108" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="&lt;div style=&quot;display: flex; justify-content: flex-start; text-align: left; align-items: baseline; font-size: 0; line-height: 1;&quot;&gt;&lt;span style=&quot;font-size:11px;&quot;&gt;&lt;span style=&quot;font-size:13px;color:#333333;font-family: Liberation Mono;&quot;&gt;dbname = os.environ.get(&#39;dbname&#39;)&#xa;&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;display: flex; justify-content: flex-start; text-align: left; align-items: baseline; font-size: 0; line-height: 1;&quot;&gt;&lt;span style=&quot;font-size:11px;&quot;&gt;&lt;span style=&quot;font-size:13px;color:#333333;font-family: Liberation Mono;&quot;&gt;user = os.environ.get(&#39;user&#39;)&#xa;&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;display: flex; justify-content: flex-start; text-align: left; align-items: baseline; font-size: 0; line-height: 1;&quot;&gt;&lt;span style=&quot;font-size:11px;&quot;&gt;&lt;span style=&quot;font-size:13px;color:#333333;font-family: Liberation Mono;&quot;&gt;password = os.environ.get(&#39;password&#39;)&#xa;&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;display: flex; justify-content: flex-start; text-align: left; align-items: baseline; font-size: 0; line-height: 1;&quot;&gt;&lt;span style=&quot;font-size:11px;&quot;&gt;&lt;span style=&quot;font-size:13px;color:#333333;font-family: Liberation Mono;&quot;&gt;SECRET_TOKEN = os.environ.get(&#39;SECRET_TOKEN&#39;)&#xa;&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;display: flex; justify-content: flex-start; text-align: left; align-items: baseline; font-size: 0; line-height: 1;&quot;&gt;&lt;span style=&quot;font-size:11px;&quot;&gt;&lt;span style=&quot;font-size:13px;color:#333333;font-family: Liberation Mono;&quot;&gt;name = None&#xa;&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;display: flex; justify-content: flex-start; text-align: left; align-items: baseline; font-size: 0; line-height: 1;&quot;&gt;&lt;span style=&quot;font-size:11px;&quot;&gt;&lt;span style=&quot;font-size:13px;color:#333333;font-family: Liberation Mono;&quot;&gt;username = None&#xa;&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;display: flex; justify-content: flex-start; text-align: left; align-items: baseline; font-size: 0; line-height: 1;&quot;&gt;&lt;span style=&quot;font-size:11px;&quot;&gt;&lt;span style=&quot;font-size:13px;color:#333333;font-family: Liberation Mono;&quot;&gt;superadmin = [799637030]&#xa;&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;display: flex; justify-content: flex-start; text-align: left; align-items: baseline; font-size: 0; line-height: 1;&quot;&gt;&lt;span style=&quot;font-size:11px;&quot;&gt;&lt;span style=&quot;font-size:13px;color:#333333;font-family: Liberation Mono;&quot;&gt;command_to_update = None&#xa;&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;display: flex; justify-content: flex-start; text-align: left; align-items: baseline; font-size: 0; line-height: 1;&quot;&gt;&lt;span style=&quot;font-size:11px;&quot;&gt;&lt;span style=&quot;font-size:13px;color:#333333;font-family: Liberation Mono;&quot;&gt;random_data = None&#xa;&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;display: flex; justify-content: flex-start; text-align: left; align-items: baseline; font-size: 0; line-height: 1;&quot;&gt;&lt;span style=&quot;font-size:11px;&quot;&gt;&lt;span style=&quot;font-size:13px;color:#333333;font-family: Liberation Mono;&quot;&gt;id = None&#xa;&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;display: flex; justify-content: flex-start; text-align: left; align-items: baseline; font-size: 0; line-height: 1;&quot;&gt;&lt;span style=&quot;font-size:11px;&quot;&gt;&lt;span style=&quot;font-size:13px;color:#333333;font-family: Liberation Mono;&quot;&gt;amount = None&#xa;&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;display: flex; justify-content: flex-start; text-align: left; align-items: baseline; font-size: 0; line-height: 1;&quot;&gt;&lt;span style=&quot;font-size:11px;&quot;&gt;&lt;span style=&quot;font-size:13px;color:#333333;font-family: Liberation Mono;&quot;&gt;status = None&#xa;&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;display: flex; justify-content: flex-start; text-align: left; align-items: baseline; font-size: 0; line-height: 1;&quot;&gt;&lt;span style=&quot;font-size:11px;&quot;&gt;&lt;span style=&quot;font-size:13px;color:#333333;font-family: Liberation Mono;&quot;&gt;addr = None&#xa;&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;display: flex; justify-content: flex-start; text-align: left; align-items: baseline; font-size: 0; line-height: 1;&quot;&gt;&lt;span style=&quot;font-size:11px;&quot;&gt;&lt;span style=&quot;font-size:13px;color:#333333;font-family: Liberation Mono;&quot;&gt;SMH = False&#xa;&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;display: flex; justify-content: flex-start; text-align: left; align-items: baseline; font-size: 0; line-height: 1;&quot;&gt;&lt;span style=&quot;font-size:11px;&quot;&gt;&lt;span style=&quot;font-size:13px;color:#333333;font-family: Liberation Mono;&quot;&gt;SMH_help = None&#xa;&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;display: flex; justify-content: flex-start; text-align: left; align-items: baseline; font-size: 0; line-height: 1;&quot;&gt;&lt;span style=&quot;font-size:11px;&quot;&gt;&lt;span style=&quot;font-size:13px;color:#333333;font-family: Liberation Mono;&quot;&gt;SMH_id = None&#xa;&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;display: flex; justify-content: flex-start; text-align: left; align-items: baseline; font-size: 0; line-height: 1;&quot;&gt;&lt;span style=&quot;font-size:11px;&quot;&gt;&lt;span style=&quot;font-size:13px;color:#333333;font-family: Liberation Mono;&quot;&gt;SMH_amount = None&#xa;&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;display: flex; justify-content: flex-start; text-align: left; align-items: baseline; font-size: 0; line-height: 1;&quot;&gt;&lt;span style=&quot;font-size:11px;&quot;&gt;&lt;span style=&quot;font-size:13px;color:#333333;font-family: Liberation Mono;&quot;&gt;conn = psycopg2.connect(dbname=dbname, user=user,&#xa;&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;display: flex; justify-content: flex-start; text-align: left; align-items: baseline; font-size: 0; line-height: 1;&quot;&gt;&lt;span style=&quot;font-size:11px;&quot;&gt;&lt;span style=&quot;font-size:13px;color:#333333;font-family: Liberation Mono;&quot;&gt;                        password=password, host=&#39;localhost&#39;)&#xa;&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;display: flex; justify-content: flex-start; text-align: left; align-items: baseline; font-size: 0; line-height: 1;&quot;&gt;&lt;span style=&quot;font-size:11px;&quot;&gt;&lt;span style=&quot;font-size:13px;color:#333333;font-family: Liberation Mono;&quot;&gt;cursor = conn.cursor()&#xa;&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;display: flex; justify-content: flex-start; text-align: left; align-items: baseline; font-size: 0; line-height: 1;&quot;&gt;&lt;span style=&quot;font-size:11px;&quot;&gt;&lt;span style=&quot;font-size:13px;color:#333333;font-family: Liberation Mono;&quot;&gt;i = 0&#xa;&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;display: flex; justify-content: flex-start; text-align: left; align-items: baseline; font-size: 0; line-height: 1;&quot;&gt;&lt;span style=&quot;font-size:11px;&quot;&gt;&lt;span style=&quot;font-size:13px;color:#333333;font-family: Liberation Mono;&quot;&gt;FORMATTER = logging.Formatter()&#xa;&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;display: flex; justify-content: flex-start; text-align: left; align-items: baseline; font-size: 0; line-height: 1;&quot;&gt;&lt;span style=&quot;font-size:11px;&quot;&gt;&lt;span style=&quot;font-size:13px;color:#333333;font-family: Liberation Mono;&quot;&gt;LOG_FILE = &quot;program.log&quot;&#xa;&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;display: flex; justify-content: flex-start; text-align: left; align-items: baseline; font-size: 0; line-height: 1;&quot;&gt;&lt;span style=&quot;font-size:11px;&quot;&gt;&lt;span style=&quot;font-size:13px;color:#333333;font-family: Liberation Mono;&quot;&gt;FORMATTER_FILE = logging.Formatter()&#xa;&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;display: flex; justify-content: flex-start; text-align: left; align-items: baseline; font-size: 0; line-height: 1;&quot;&gt;&lt;span style=&quot;font-size:11px;&quot;&gt;&lt;/span&gt;&lt;/div&gt;" lucidchartObjectId="3DQ0W-RuxyII" id="xtyEx_gyL_2J196OI3PX-2">
+          <mxCell style="html=1;overflow=block;blockSpacing=1;whiteSpace=wrap;shape=process;whiteSpace=wrap;fontSize=11;fontFamily=Liberation Mono;spacing=3;verticalAlign=top;strokeColor=#5e5e5e;strokeOpacity=100;rounded=1;absoluteArcSize=1;arcSize=7;strokeWidth=2;" parent="1" vertex="1">
+            <mxGeometry x="168" width="684" height="339" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="" lucidchartObjectId="-DQ09T~aSJb0" id="xtyEx_gyL_2J196OI3PX-3">
+          <mxCell style="html=1;jettySize=18;whiteSpace=wrap;fontSize=11;strokeColor=#5E5E5E;rounded=1;arcSize=12;edgeStyle=orthogonalEdgeStyle;startArrow=none;;endArrow=block;endFill=1;;exitX=1.008;exitY=0.5;exitPerimeter=0;entryX=-0.001;entryY=0.5;entryPerimeter=0;" parent="1" source="xtyEx_gyL_2J196OI3PX-1" target="xtyEx_gyL_2J196OI3PX-2" edge="1">
+            <mxGeometry width="100" height="100" relative="1" as="geometry">
+              <Array as="points" />
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="#Separate Message Handler, for admins" lucidchartObjectId="pJQ08L373KIc" id="xtyEx_gyL_2J196OI3PX-4">
+          <mxCell style="html=1;overflow=block;blockSpacing=1;whiteSpace=wrap;whiteSpace=wrap;fontSize=13;spacing=3;verticalAlign=middle;strokeColor=none;fillColor=#FFECA9;strokeWidth=0;" parent="1" vertex="1">
+            <mxGeometry x="696" width="96" height="96" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="__init__" lucidchartObjectId="HMQ0KcT~kcrE" id="xtyEx_gyL_2J196OI3PX-5">
+          <mxCell style="html=1;overflow=block;blockSpacing=1;whiteSpace=wrap;;whiteSpace=wrap;fontSize=13;fontFamily=Liberation Mono;fontColor=#333333;spacing=3;strokeColor=#5e5e5e;strokeOpacity=100;rounded=1;absoluteArcSize=1;arcSize=7;strokeWidth=2;" parent="1" vertex="1">
+            <mxGeometry x="6" y="192" width="96" height="96" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="&lt;div style=&quot;display: flex; justify-content: center; text-align: center; align-items: baseline; font-size: 0; line-height: 1;&quot;&gt;&lt;span style=&quot;font-size:11px;&quot;&gt;&lt;span style=&quot;font-size:13px;color:#333333;&quot;&gt;&lt;span style=&quot;font-size:13px;color:#333333;&quot;&gt;Создает &lt;/span&gt;&lt;span style=&quot;font-size:13px;color:#333333;font-family: Liberation Mono;&quot;&gt;config.random_data&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;" lucidchartObjectId="GNQ0ZvVok~LZ" id="xtyEx_gyL_2J196OI3PX-6">
+          <mxCell style="html=1;overflow=block;blockSpacing=1;whiteSpace=wrap;;whiteSpace=wrap;fontSize=11;fontFamily=Liberation Mono;spacing=3;strokeColor=#5e5e5e;strokeOpacity=100;rounded=1;absoluteArcSize=1;arcSize=7;strokeWidth=2;" parent="1" vertex="1">
+            <mxGeometry x="12" y="349" width="156" height="96" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="" lucidchartObjectId="JNQ0uCDDpaW5" id="xtyEx_gyL_2J196OI3PX-7">
+          <mxCell style="html=1;jettySize=18;whiteSpace=wrap;fontSize=11;strokeColor=#5E5E5E;rounded=1;arcSize=12;edgeStyle=orthogonalEdgeStyle;startArrow=none;;endArrow=block;endFill=1;;exitX=0.5;exitY=1.009;exitPerimeter=0;entryX=0.5;entryY=-0.009;entryPerimeter=0;" parent="1" source="xtyEx_gyL_2J196OI3PX-5" target="xtyEx_gyL_2J196OI3PX-6" edge="1">
+            <mxGeometry width="100" height="100" relative="1" as="geometry">
+              <Array as="points" />
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="" lucidchartObjectId="qOQ0TwKlsnbl" id="xtyEx_gyL_2J196OI3PX-8">
+          <mxCell style="html=1;jettySize=18;whiteSpace=wrap;fontSize=11;strokeColor=#5E5E5E;rounded=1;arcSize=12;edgeStyle=orthogonalEdgeStyle;startArrow=none;;endArrow=block;endFill=1;;exitX=0.5;exitY=1.008;exitPerimeter=0;entryX=0.5;entryY=-0.009;entryPerimeter=0;" parent="1" source="xtyEx_gyL_2J196OI3PX-1" target="xtyEx_gyL_2J196OI3PX-5" edge="1">
+            <mxGeometry width="100" height="100" relative="1" as="geometry">
+              <Array as="points" />
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="is_superadmin(chat_id)" lucidchartObjectId="3OQ02ox6k~gU" id="xtyEx_gyL_2J196OI3PX-9">
+          <mxCell style="html=1;overflow=block;blockSpacing=1;whiteSpace=wrap;;whiteSpace=wrap;fontSize=13;fontFamily=Liberation Mono;fontColor=#333333;spacing=3;strokeColor=#5e5e5e;strokeOpacity=100;rounded=1;absoluteArcSize=1;arcSize=7;strokeWidth=2;" parent="1" vertex="1">
+            <mxGeometry x="-240" y="192" width="180" height="96" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="" lucidchartObjectId="sPQ0z7JAv8b." id="xtyEx_gyL_2J196OI3PX-10">
+          <mxCell style="html=1;jettySize=18;whiteSpace=wrap;fontSize=11;strokeColor=#5E5E5E;rounded=1;arcSize=12;edgeStyle=orthogonalEdgeStyle;startArrow=none;;endArrow=block;endFill=1;;exitX=0.5;exitY=1.008;exitPerimeter=0;entryX=0.5;entryY=-0.009;entryPerimeter=0;" parent="1" source="xtyEx_gyL_2J196OI3PX-1" target="xtyEx_gyL_2J196OI3PX-9" edge="1">
+            <mxGeometry width="100" height="100" relative="1" as="geometry">
+              <Array as="points" />
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="chat_id in config.superadmin" lucidchartObjectId="EPQ0c0hJ~rUx" id="xtyEx_gyL_2J196OI3PX-11">
+          <mxCell style="html=1;overflow=block;blockSpacing=1;whiteSpace=wrap;rhombus;whiteSpace=wrap;fontSize=13;fontFamily=Liberation Mono;fontColor=#333333;spacing=3;strokeColor=#5e5e5e;strokeOpacity=100;rounded=1;absoluteArcSize=1;arcSize=7;strokeWidth=2;" parent="1" vertex="1">
+            <mxGeometry x="-231" y="324" width="186" height="84" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="" lucidchartObjectId="hQQ0FDJRpMS4" id="xtyEx_gyL_2J196OI3PX-12">
+          <mxCell style="html=1;jettySize=18;whiteSpace=wrap;fontSize=11;strokeColor=#5E5E5E;rounded=1;arcSize=12;edgeStyle=orthogonalEdgeStyle;startArrow=none;;endArrow=block;endFill=1;;exitX=0.5;exitY=1.009;exitPerimeter=0;entryX=0.5;entryY=0.001;entryPerimeter=0;" parent="1" source="xtyEx_gyL_2J196OI3PX-9" target="xtyEx_gyL_2J196OI3PX-11" edge="1">
+            <mxGeometry width="100" height="100" relative="1" as="geometry">
+              <Array as="points" />
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="" lucidchartObjectId="rQQ0VRvzDDRo" id="xtyEx_gyL_2J196OI3PX-13">
+          <mxCell style="html=1;jettySize=18;whiteSpace=wrap;fontSize=10;fontColor=#333333;fontStyle=1;strokeColor=#5E5E5E;rounded=1;arcSize=12;edgeStyle=orthogonalEdgeStyle;startArrow=none;;endArrow=block;endFill=1;;exitX=0.994;exitY=0.5;exitPerimeter=0;entryX=0.5;entryY=-0.012;entryPerimeter=0;" parent="1" source="xtyEx_gyL_2J196OI3PX-11" target="xtyEx_gyL_2J196OI3PX-15" edge="1">
+            <mxGeometry width="100" height="100" relative="1" as="geometry">
+              <Array as="points" />
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <mxCell id="xtyEx_gyL_2J196OI3PX-14" value="Yes" style="text;html=1;resizable=0;labelBackgroundColor=#ffffff;align=center;verticalAlign=middle;fontStyle=1;fontColor=#333333;;fontSize=10.666666666666666;" parent="xtyEx_gyL_2J196OI3PX-13" vertex="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <UserObject label="return True" lucidchartObjectId="uQQ0.fqNbmyH" id="xtyEx_gyL_2J196OI3PX-15">
+          <mxCell style="html=1;overflow=block;blockSpacing=1;whiteSpace=wrap;;whiteSpace=wrap;fontSize=13;fontFamily=Liberation Mono;fontColor=#333333;spacing=7;strokeColor=#5E5E5E;rounded=1;absoluteArcSize=1;arcSize=7;strokeWidth=2;" parent="1" vertex="1">
+            <mxGeometry x="-72" y="528" width="96" height="72" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="" lucidchartObjectId="EQQ0zGtnbi05" id="xtyEx_gyL_2J196OI3PX-16">
+          <mxCell style="html=1;jettySize=18;whiteSpace=wrap;fontSize=10;fontColor=#333333;fontStyle=1;strokeColor=#5E5E5E;rounded=1;arcSize=12;edgeStyle=orthogonalEdgeStyle;startArrow=none;;endArrow=block;endFill=1;;exitX=0.006;exitY=0.5;exitPerimeter=0;entryX=0.5;entryY=-0.012;entryPerimeter=0;" parent="1" source="xtyEx_gyL_2J196OI3PX-11" target="xtyEx_gyL_2J196OI3PX-18" edge="1">
+            <mxGeometry width="100" height="100" relative="1" as="geometry">
+              <Array as="points" />
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <mxCell id="xtyEx_gyL_2J196OI3PX-17" value="No" style="text;html=1;resizable=0;labelBackgroundColor=#ffffff;align=center;verticalAlign=middle;fontStyle=1;fontColor=#333333;;fontSize=10.666666666666666;" parent="xtyEx_gyL_2J196OI3PX-16" vertex="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <UserObject label="return False" lucidchartObjectId="FQQ06dOtDQjU" id="xtyEx_gyL_2J196OI3PX-18">
+          <mxCell style="html=1;overflow=block;blockSpacing=1;whiteSpace=wrap;;whiteSpace=wrap;fontSize=13;fontFamily=Liberation Mono;fontColor=#333333;spacing=7;strokeColor=#5E5E5E;rounded=1;absoluteArcSize=1;arcSize=7;strokeWidth=2;" parent="1" vertex="1">
+            <mxGeometry x="-312" y="528" width="96" height="72" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="loggers" lucidchartObjectId="dRQ0bjkCkTeu" id="xtyEx_gyL_2J196OI3PX-19">
+          <mxCell style="html=1;overflow=block;blockSpacing=1;whiteSpace=wrap;;whiteSpace=wrap;fontSize=13;fontFamily=Liberation Mono;fontColor=#333333;spacing=7;strokeColor=#5e5e5e;strokeOpacity=100;rounded=1;absoluteArcSize=1;arcSize=7;strokeWidth=2;" parent="1" vertex="1">
+            <mxGeometry x="-378" y="192" width="96" height="72" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="" lucidchartObjectId="oRQ0dW47oApv" id="xtyEx_gyL_2J196OI3PX-20">
+          <mxCell style="html=1;jettySize=18;whiteSpace=wrap;fontSize=11;strokeColor=#5E5E5E;rounded=1;arcSize=12;edgeStyle=orthogonalEdgeStyle;startArrow=none;;endArrow=block;endFill=1;;exitX=0.5;exitY=1.008;exitPerimeter=0;entryX=0.5;entryY=-0.012;entryPerimeter=0;" parent="1" source="xtyEx_gyL_2J196OI3PX-1" target="xtyEx_gyL_2J196OI3PX-19" edge="1">
+            <mxGeometry width="100" height="100" relative="1" as="geometry">
+              <Array as="points" />
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="Класс Keyboards" lucidchartObjectId="pSQ0SpDm4W1n" id="xtyEx_gyL_2J196OI3PX-21">
+          <mxCell style="html=1;overflow=block;blockSpacing=1;whiteSpace=wrap;;whiteSpace=wrap;fontSize=13;fontColor=#333333;spacing=3;strokeColor=#5e5e5e;strokeOpacity=100;rounded=1;absoluteArcSize=1;arcSize=7;strokeWidth=2;" parent="1" vertex="1">
+            <mxGeometry x="-648" y="84" width="132" height="96" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="" lucidchartObjectId="VTQ0Rz09wzG1" id="xtyEx_gyL_2J196OI3PX-22">
+          <mxCell style="html=1;jettySize=18;whiteSpace=wrap;fontSize=11;strokeColor=#5E5E5E;rounded=1;arcSize=12;edgeStyle=orthogonalEdgeStyle;startArrow=none;;endArrow=block;endFill=1;;exitX=-0.008;exitY=0.5;exitPerimeter=0;entryX=1.007;entryY=0.5;entryPerimeter=0;" parent="1" source="xtyEx_gyL_2J196OI3PX-1" target="xtyEx_gyL_2J196OI3PX-21" edge="1">
+            <mxGeometry width="100" height="100" relative="1" as="geometry">
+              <Array as="points" />
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="menu&#xa;confirm&#xa;yesNo&#xa;yesNo_for_order&#xa;admin_keyboard&#xa;SCP_5000_keyboard" lucidchartObjectId="YUQ0JGQ-YQhx" id="xtyEx_gyL_2J196OI3PX-23">
+          <mxCell style="html=1;overflow=block;blockSpacing=1;whiteSpace=wrap;shape=process;whiteSpace=wrap;fontSize=13;fontFamily=Liberation Mono;fontColor=#333333;spacing=3;strokeColor=#5e5e5e;strokeOpacity=100;rounded=1;absoluteArcSize=1;arcSize=7;strokeWidth=2;" parent="1" vertex="1">
+            <mxGeometry x="-672" y="216" width="180" height="144" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="" lucidchartObjectId="hWQ0HaFvzRCO" id="xtyEx_gyL_2J196OI3PX-24">
+          <mxCell style="html=1;jettySize=18;whiteSpace=wrap;fontSize=11;strokeColor=#5E5E5E;rounded=1;arcSize=12;edgeStyle=orthogonalEdgeStyle;startArrow=none;;endArrow=block;endFill=1;;exitX=0.5;exitY=1.009;exitPerimeter=0;entryX=0.5;entryY=-0.006;entryPerimeter=0;" parent="1" source="xtyEx_gyL_2J196OI3PX-21" target="xtyEx_gyL_2J196OI3PX-23" edge="1">
+            <mxGeometry width="100" height="100" relative="1" as="geometry">
+              <Array as="points" />
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <mxCell id="-ocyjN4sufj5ShhHaZHQ-3" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeColor=#5E5E5E;endFill=1;endArrow=block;arcSize=12;" edge="1" parent="1" source="xtyEx_gyL_2J196OI3PX-25" target="-ocyjN4sufj5ShhHaZHQ-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="-ocyjN4sufj5ShhHaZHQ-54" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeColor=#5E5E5E;endFill=1;endArrow=block;arcSize=12;" edge="1" parent="1" source="xtyEx_gyL_2J196OI3PX-25" target="-ocyjN4sufj5ShhHaZHQ-52">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="-870" y="200" />
+              <mxPoint x="-2560" y="200" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-ocyjN4sufj5ShhHaZHQ-73" style="edgeStyle=orthogonalEdgeStyle;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;endArrow=block;endFill=1;strokeColor=#5E5E5E;fontSize=10;fontColor=#333333;" edge="1" parent="1" source="xtyEx_gyL_2J196OI3PX-25" target="-ocyjN4sufj5ShhHaZHQ-72">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="-870" y="200" />
+              <mxPoint x="-2923" y="200" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-ocyjN4sufj5ShhHaZHQ-91" style="edgeStyle=orthogonalEdgeStyle;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeColor=#5E5E5E;fontFamily=Liberation Mono;fontSize=10;fontColor=#333333;" edge="1" parent="1" source="xtyEx_gyL_2J196OI3PX-25" target="-ocyjN4sufj5ShhHaZHQ-89">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="-870" y="200" />
+              <mxPoint x="-3330" y="200" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-ocyjN4sufj5ShhHaZHQ-116" style="edgeStyle=orthogonalEdgeStyle;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;endArrow=block;endFill=1;strokeColor=#5E5E5E;fontFamily=Liberation Mono;fontSize=10;fontColor=#333333;" edge="1" parent="1" source="xtyEx_gyL_2J196OI3PX-25" target="-ocyjN4sufj5ShhHaZHQ-115">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="-870" y="200" />
+              <mxPoint x="-3785" y="200" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <UserObject label="Класс PostgreSQL" lucidchartObjectId="TWQ0KrH0w~ts" id="xtyEx_gyL_2J196OI3PX-25">
+          <mxCell style="html=1;overflow=block;blockSpacing=1;whiteSpace=wrap;;whiteSpace=wrap;fontSize=13;fontColor=#333333;spacing=3;strokeColor=#5e5e5e;strokeOpacity=100;rounded=1;absoluteArcSize=1;arcSize=7;strokeWidth=2;" parent="1" vertex="1">
+            <mxGeometry x="-936" y="84" width="132" height="96" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="" lucidchartObjectId="-WQ0o5qtlB7k" id="xtyEx_gyL_2J196OI3PX-26">
+          <mxCell style="html=1;jettySize=18;whiteSpace=wrap;fontSize=11;strokeColor=#5E5E5E;rounded=1;arcSize=12;edgeStyle=orthogonalEdgeStyle;startArrow=none;;endArrow=block;endFill=1;;exitX=-0.008;exitY=0.5;exitPerimeter=0;entryX=1.007;entryY=0.5;entryPerimeter=0;" parent="1" source="xtyEx_gyL_2J196OI3PX-1" target="xtyEx_gyL_2J196OI3PX-25" edge="1">
+            <mxGeometry width="100" height="100" relative="1" as="geometry">
+              <Array as="points">
+                <mxPoint x="-750" y="54" />
+                <mxPoint x="-750" y="132" />
+              </Array>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="log" lucidchartObjectId="JXQ0AlCBZDfg" id="xtyEx_gyL_2J196OI3PX-27">
+          <mxCell style="html=1;overflow=block;blockSpacing=1;whiteSpace=wrap;shape=process;whiteSpace=wrap;fontSize=13;fontFamily=Liberation Mono;fontColor=#333333;spacing=3;strokeColor=#5e5e5e;strokeOpacity=100;rounded=1;absoluteArcSize=1;arcSize=7;strokeWidth=2;" parent="1" vertex="1">
+            <mxGeometry x="-1068" y="96" width="96" height="72" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="" lucidchartObjectId="LXQ0_CqftDRb" id="xtyEx_gyL_2J196OI3PX-28">
+          <mxCell style="html=1;jettySize=18;whiteSpace=wrap;fontSize=11;strokeColor=#5E5E5E;rounded=1;arcSize=12;edgeStyle=orthogonalEdgeStyle;startArrow=none;;endArrow=block;endFill=1;;exitX=-0.007;exitY=0.5;exitPerimeter=0;entryX=1.009;entryY=0.5;entryPerimeter=0;" parent="1" source="xtyEx_gyL_2J196OI3PX-25" target="xtyEx_gyL_2J196OI3PX-27" edge="1">
+            <mxGeometry width="100" height="100" relative="1" as="geometry">
+              <Array as="points" />
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="register(id, name, username)" lucidchartObjectId="d3Q0F_DugEkv" id="xtyEx_gyL_2J196OI3PX-29">
+          <mxCell style="html=1;overflow=block;blockSpacing=1;whiteSpace=wrap;;whiteSpace=wrap;fontSize=13;fontFamily=Liberation Mono;fontColor=#333333;spacing=3;strokeColor=#5e5e5e;strokeOpacity=100;rounded=1;absoluteArcSize=1;arcSize=7;strokeWidth=2;" parent="1" vertex="1">
+            <mxGeometry x="-1080" y="228" width="252" height="36" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="" lucidchartObjectId="v3Q0CpTUsn5E" id="xtyEx_gyL_2J196OI3PX-30">
+          <mxCell style="html=1;jettySize=18;whiteSpace=wrap;fontSize=11;strokeColor=#5E5E5E;rounded=1;arcSize=12;edgeStyle=orthogonalEdgeStyle;startArrow=none;;endArrow=block;endFill=1;;exitX=0.5;exitY=1.009;exitPerimeter=0;entryX=0.5;entryY=-0.025;entryPerimeter=0;" parent="1" source="xtyEx_gyL_2J196OI3PX-25" target="xtyEx_gyL_2J196OI3PX-29" edge="1">
+            <mxGeometry width="100" height="100" relative="1" as="geometry">
+              <Array as="points" />
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="Запрос" lucidchartObjectId="c5Q0tSHbYAaO" id="xtyEx_gyL_2J196OI3PX-31">
+          <mxCell style="html=1;overflow=block;blockSpacing=1;whiteSpace=wrap;rounded=1;arcSize=50;whiteSpace=wrap;fontSize=13;fontColor=#333333;spacing=3;strokeColor=#5e5e5e;strokeOpacity=100;strokeWidth=2;" parent="1" vertex="1">
+            <mxGeometry x="-996" y="312" width="96" height="48" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="" lucidchartObjectId="l7Q0YQLu.lhM" id="xtyEx_gyL_2J196OI3PX-32">
+          <mxCell style="html=1;jettySize=18;whiteSpace=wrap;fontSize=11;strokeColor=#5E5E5E;rounded=1;arcSize=12;edgeStyle=orthogonalEdgeStyle;startArrow=none;;endArrow=block;endFill=1;;exitX=0.5;exitY=1.025;exitPerimeter=0;entryX=0.438;entryY=-0.019;entryPerimeter=0;" parent="1" source="xtyEx_gyL_2J196OI3PX-29" target="xtyEx_gyL_2J196OI3PX-31" edge="1">
+            <mxGeometry width="100" height="100" relative="1" as="geometry">
+              <Array as="points" />
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="" lucidchartObjectId="87Q0lBMQYeHx" id="xtyEx_gyL_2J196OI3PX-33">
+          <mxCell style="html=1;jettySize=18;whiteSpace=wrap;fontSize=11;strokeColor=#5E5E5E;rounded=1;arcSize=12;edgeStyle=orthogonalEdgeStyle;startArrow=none;;endArrow=block;endFill=1;;exitX=1.009;exitY=0.5;exitPerimeter=0;entryX=0.5;entryY=-0.019;entryPerimeter=0;" parent="1" source="xtyEx_gyL_2J196OI3PX-31" target="xtyEx_gyL_2J196OI3PX-34" edge="1">
+            <mxGeometry width="100" height="100" relative="1" as="geometry">
+              <Array as="points" />
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="Exception as e:" lucidchartObjectId="~7Q0lUp9c2rR" id="xtyEx_gyL_2J196OI3PX-34">
+          <mxCell style="html=1;overflow=block;blockSpacing=1;whiteSpace=wrap;triangle;direction=south;anchorPointDirection=0;whiteSpace=wrap;fontSize=13;fontFamily=Liberation Mono;fontColor=#333333;spacing=3;verticalAlign=top;strokeColor=#5E5E5E;rounded=1;absoluteArcSize=1;arcSize=7;strokeWidth=2;" parent="1" vertex="1">
+            <mxGeometry x="-804" y="410" width="114" height="58" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="" lucidchartObjectId="D8Q0KIHYNTnN" id="xtyEx_gyL_2J196OI3PX-35">
+          <mxCell style="html=1;jettySize=18;whiteSpace=wrap;fontSize=11;strokeColor=#5E5E5E;rounded=1;arcSize=12;edgeStyle=orthogonalEdgeStyle;startArrow=none;;endArrow=block;endFill=1;;exitX=0.5;exitY=0.987;exitPerimeter=0;entryX=0.5;entryY=-0.012;entryPerimeter=0;" parent="1" source="xtyEx_gyL_2J196OI3PX-34" target="xtyEx_gyL_2J196OI3PX-36" edge="1">
+            <mxGeometry width="100" height="100" relative="1" as="geometry">
+              <Array as="points" />
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="raise" lucidchartObjectId="E8Q0.PhNvMUw" id="xtyEx_gyL_2J196OI3PX-36">
+          <mxCell style="html=1;overflow=block;blockSpacing=1;whiteSpace=wrap;;whiteSpace=wrap;fontSize=13;fontFamily=Liberation Mono;fontColor=#333333;spacing=7;strokeColor=#5E5E5E;rounded=1;absoluteArcSize=1;arcSize=7;strokeWidth=2;" parent="1" vertex="1">
+            <mxGeometry x="-795" y="516" width="96" height="72" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="" lucidchartObjectId="28Q0QKNo~Ukf" id="xtyEx_gyL_2J196OI3PX-37">
+          <mxCell style="html=1;jettySize=18;whiteSpace=wrap;fontSize=11;strokeColor=#5E5E5E;rounded=1;arcSize=12;edgeStyle=orthogonalEdgeStyle;startArrow=none;;endArrow=block;endFill=1;;exitX=0.5;exitY=1.019;exitPerimeter=0;entryX=0.5;entryY=-0.012;entryPerimeter=0;" parent="1" source="xtyEx_gyL_2J196OI3PX-31" target="xtyEx_gyL_2J196OI3PX-38" edge="1">
+            <mxGeometry width="100" height="100" relative="1" as="geometry">
+              <Array as="points" />
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="conn.commit()" lucidchartObjectId="48Q0Pkbf6c8x" id="xtyEx_gyL_2J196OI3PX-38">
+          <mxCell style="html=1;overflow=block;blockSpacing=1;whiteSpace=wrap;;whiteSpace=wrap;fontSize=13;fontFamily=Liberation Mono;fontColor=#333333;spacing=7;strokeColor=#5E5E5E;rounded=1;absoluteArcSize=1;arcSize=7;strokeWidth=2;" parent="1" vertex="1">
+            <mxGeometry x="-1002" y="456" width="108" height="72" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="confirm(id, balance)" lucidchartObjectId="59Q0v1g5x1WH" id="xtyEx_gyL_2J196OI3PX-39">
+          <mxCell style="html=1;overflow=block;blockSpacing=1;whiteSpace=wrap;;whiteSpace=wrap;fontSize=13;fontFamily=Liberation Mono;fontColor=#333333;spacing=7;strokeColor=#5e5e5e;strokeOpacity=100;rounded=1;absoluteArcSize=1;arcSize=7;strokeWidth=2;" parent="1" vertex="1">
+            <mxGeometry x="-1308" y="228" width="180" height="36" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="" lucidchartObjectId="p-Q0mg.cwxbQ" id="xtyEx_gyL_2J196OI3PX-40">
+          <mxCell style="html=1;jettySize=18;whiteSpace=wrap;fontSize=11;strokeColor=#5E5E5E;rounded=1;arcSize=12;edgeStyle=orthogonalEdgeStyle;startArrow=none;;endArrow=block;endFill=1;;exitX=0.5;exitY=1.009;exitPerimeter=0;entryX=0.5;entryY=-0.025;entryPerimeter=0;" parent="1" source="xtyEx_gyL_2J196OI3PX-25" target="xtyEx_gyL_2J196OI3PX-39" edge="1">
+            <mxGeometry width="100" height="100" relative="1" as="geometry">
+              <Array as="points" />
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="Запрос" lucidchartObjectId="E-Q0p1fXKIm3" id="xtyEx_gyL_2J196OI3PX-41">
+          <mxCell style="html=1;overflow=block;blockSpacing=1;whiteSpace=wrap;;whiteSpace=wrap;fontSize=13;fontColor=#333333;spacing=7;strokeColor=#5e5e5e;strokeOpacity=100;rounded=1;absoluteArcSize=1;arcSize=7;strokeWidth=2;" parent="1" vertex="1">
+            <mxGeometry x="-1266" y="300" width="96" height="72" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="" lucidchartObjectId="G-Q0-Jyw0N.0" id="xtyEx_gyL_2J196OI3PX-42">
+          <mxCell style="html=1;jettySize=18;whiteSpace=wrap;fontSize=11;strokeColor=#5E5E5E;rounded=1;arcSize=12;edgeStyle=orthogonalEdgeStyle;startArrow=none;;endArrow=block;endFill=1;;exitX=0.5;exitY=1.025;exitPerimeter=0;entryX=0.5;entryY=-0.012;entryPerimeter=0;" parent="1" source="xtyEx_gyL_2J196OI3PX-39" target="xtyEx_gyL_2J196OI3PX-41" edge="1">
+            <mxGeometry width="100" height="100" relative="1" as="geometry">
+              <Array as="points" />
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="" lucidchartObjectId="O-Q07vXEeAWM" id="xtyEx_gyL_2J196OI3PX-43">
+          <mxCell style="html=1;jettySize=18;whiteSpace=wrap;fontSize=11;strokeColor=#5E5E5E;rounded=1;arcSize=12;edgeStyle=orthogonalEdgeStyle;startArrow=none;;endArrow=block;endFill=1;;exitX=0.5;exitY=1.013;exitPerimeter=0;entryX=0.5;entryY=-0.012;entryPerimeter=0;" parent="1" source="xtyEx_gyL_2J196OI3PX-41" target="xtyEx_gyL_2J196OI3PX-44" edge="1">
+            <mxGeometry width="100" height="100" relative="1" as="geometry">
+              <Array as="points" />
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="conn.commit()" lucidchartObjectId="P-Q0LnzoWJox" id="xtyEx_gyL_2J196OI3PX-44">
+          <mxCell style="html=1;overflow=block;blockSpacing=1;whiteSpace=wrap;;whiteSpace=wrap;fontSize=13;fontFamily=Liberation Mono;fontColor=#333333;spacing=7;strokeColor=#5E5E5E;rounded=1;absoluteArcSize=1;arcSize=7;strokeWidth=2;" parent="1" vertex="1">
+            <mxGeometry x="-1275" y="432" width="114" height="72" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="block(id, question)" lucidchartObjectId="l_Q01EFt81c7" id="xtyEx_gyL_2J196OI3PX-45">
+          <mxCell style="html=1;overflow=block;blockSpacing=1;whiteSpace=wrap;;whiteSpace=wrap;fontSize=13;fontFamily=Liberation Mono;fontColor=#333333;spacing=7;strokeColor=#5e5e5e;strokeOpacity=100;rounded=1;absoluteArcSize=1;arcSize=7;strokeWidth=2;" parent="1" vertex="1">
+            <mxGeometry x="-1536" y="228" width="180" height="36" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="" lucidchartObjectId="X_Q0ZRWoyniU" id="xtyEx_gyL_2J196OI3PX-46">
+          <mxCell style="html=1;jettySize=18;whiteSpace=wrap;fontSize=11;strokeColor=#5E5E5E;rounded=1;arcSize=12;edgeStyle=orthogonalEdgeStyle;startArrow=none;;endArrow=block;endFill=1;;exitX=0.5;exitY=1.009;exitPerimeter=0;entryX=0.5;entryY=-0.025;entryPerimeter=0;" parent="1" source="xtyEx_gyL_2J196OI3PX-25" target="xtyEx_gyL_2J196OI3PX-45" edge="1">
+            <mxGeometry width="100" height="100" relative="1" as="geometry">
+              <Array as="points" />
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="question is True" lucidchartObjectId="b~Q0eY7LzALk" id="xtyEx_gyL_2J196OI3PX-47">
+          <mxCell style="html=1;overflow=block;blockSpacing=1;whiteSpace=wrap;rhombus;whiteSpace=wrap;fontSize=13;fontFamily=Liberation Mono;fontColor=#333333;spacing=3;strokeColor=#5e5e5e;strokeOpacity=100;rounded=1;absoluteArcSize=1;arcSize=7;strokeWidth=2;" parent="1" vertex="1">
+            <mxGeometry x="-1515" y="300" width="138" height="72" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="" lucidchartObjectId="D~Q0fflemiTA" id="xtyEx_gyL_2J196OI3PX-48">
+          <mxCell style="html=1;jettySize=18;whiteSpace=wrap;fontSize=10;fontColor=#333333;fontStyle=1;strokeColor=#5E5E5E;rounded=1;arcSize=12;edgeStyle=orthogonalEdgeStyle;startArrow=none;;endArrow=block;endFill=1;;exitX=0.008;exitY=0.5;exitPerimeter=0;entryX=0.5;entryY=-0.037;entryPerimeter=0;" parent="1" source="xtyEx_gyL_2J196OI3PX-47" target="xtyEx_gyL_2J196OI3PX-50" edge="1">
+            <mxGeometry width="100" height="100" relative="1" as="geometry">
+              <Array as="points" />
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <mxCell id="xtyEx_gyL_2J196OI3PX-49" value="Yes" style="text;html=1;resizable=0;labelBackgroundColor=#ffffff;align=center;verticalAlign=middle;fontStyle=1;fontColor=#333333;;fontSize=10.666666666666666;" parent="xtyEx_gyL_2J196OI3PX-48" vertex="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <UserObject label="Запрос" lucidchartObjectId="H~Q0LHvacU.Q" id="xtyEx_gyL_2J196OI3PX-50">
+          <mxCell style="html=1;overflow=block;blockSpacing=1;whiteSpace=wrap;;whiteSpace=wrap;fontSize=13;fontColor=#333333;spacing=7;strokeColor=#5E5E5E;rounded=1;absoluteArcSize=1;arcSize=7;strokeWidth=2;" parent="1" vertex="1">
+            <mxGeometry x="-1608" y="414" width="96" height="24" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="" lucidchartObjectId="faR0~mw60AYh" id="xtyEx_gyL_2J196OI3PX-51">
+          <mxCell style="html=1;jettySize=18;whiteSpace=wrap;fontSize=11;strokeColor=#5E5E5E;rounded=1;arcSize=12;edgeStyle=orthogonalEdgeStyle;startArrow=none;;endArrow=block;endFill=1;;exitX=0.5;exitY=1.038;exitPerimeter=0;entryX=0.5;entryY=-0.037;entryPerimeter=0;" parent="1" source="xtyEx_gyL_2J196OI3PX-50" edge="1">
+            <mxGeometry width="100" height="100" relative="1" as="geometry">
+              <Array as="points" />
+              <mxPoint x="-1560" y="485.1120000000001" as="targetPoint" />
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="cursor.fetchone()" lucidchartObjectId="gaR0jCmPV1Eh" id="xtyEx_gyL_2J196OI3PX-52">
+          <mxCell style="html=1;overflow=block;blockSpacing=1;whiteSpace=wrap;;whiteSpace=wrap;fontSize=13;fontFamily=Liberation Mono;fontColor=#333333;spacing=7;strokeColor=#5E5E5E;rounded=1;absoluteArcSize=1;arcSize=7;strokeWidth=2;" parent="1" vertex="1">
+            <mxGeometry x="-1638" y="480" width="156" height="24" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="" lucidchartObjectId="2aR0TyFjc0ti" id="xtyEx_gyL_2J196OI3PX-53">
+          <mxCell style="html=1;jettySize=18;whiteSpace=wrap;fontSize=11;strokeColor=#5E5E5E;rounded=1;arcSize=12;edgeStyle=orthogonalEdgeStyle;startArrow=none;;endArrow=block;endFill=1;;exitX=0.5;exitY=1.038;exitPerimeter=0;entryX=0.5;entryY=0.002;entryPerimeter=0;" parent="1" edge="1">
+            <mxGeometry width="100" height="100" relative="1" as="geometry">
+              <Array as="points" />
+              <mxPoint x="-1560" y="510.9119999999998" as="sourcePoint" />
+              <mxPoint x="-1560" y="558.1439999999998" as="targetPoint" />
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="record[3] is True" lucidchartObjectId="4aR0fzoKFp~W" id="xtyEx_gyL_2J196OI3PX-54">
+          <mxCell style="html=1;overflow=block;blockSpacing=1;whiteSpace=wrap;rhombus;whiteSpace=wrap;fontSize=13;fontFamily=Liberation Mono;fontColor=#333333;spacing=3;strokeColor=#5E5E5E;rounded=1;absoluteArcSize=1;arcSize=7;strokeWidth=2;" parent="1" vertex="1">
+            <mxGeometry x="-1626" y="552" width="132" height="72" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="" lucidchartObjectId="kbR0sgvIYBm." id="xtyEx_gyL_2J196OI3PX-55">
+          <mxCell style="html=1;jettySize=18;whiteSpace=wrap;fontSize=10;fontColor=#333333;fontStyle=1;strokeColor=#5E5E5E;rounded=1;arcSize=12;edgeStyle=orthogonalEdgeStyle;startArrow=none;;endArrow=block;endFill=1;;exitX=0.008;exitY=0.5;exitPerimeter=0;entryX=0.5;entryY=-0.012;entryPerimeter=0;" parent="1" edge="1">
+            <mxGeometry width="100" height="100" relative="1" as="geometry">
+              <Array as="points" />
+              <mxPoint x="-1624.944" y="594" as="sourcePoint" />
+              <mxPoint x="-1656" y="677.136" as="targetPoint" />
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <mxCell id="xtyEx_gyL_2J196OI3PX-56" value="Yes" style="text;html=1;resizable=0;labelBackgroundColor=#ffffff;align=center;verticalAlign=middle;fontStyle=1;fontColor=#333333;;fontSize=10.666666666666666;" parent="xtyEx_gyL_2J196OI3PX-55" vertex="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <UserObject label="return True" lucidchartObjectId="nbR0TXfwdI72" id="xtyEx_gyL_2J196OI3PX-57">
+          <mxCell style="html=1;overflow=block;blockSpacing=1;whiteSpace=wrap;;whiteSpace=wrap;fontSize=13;fontFamily=Liberation Mono;fontColor=#333333;spacing=7;strokeColor=#5E5E5E;rounded=1;absoluteArcSize=1;arcSize=7;strokeWidth=2;" parent="1" vertex="1">
+            <mxGeometry x="-1704" y="672" width="96" height="72" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="" lucidchartObjectId="FbR0.Y.JKC6a" id="xtyEx_gyL_2J196OI3PX-58">
+          <mxCell style="html=1;jettySize=18;whiteSpace=wrap;fontSize=11;strokeColor=#5E5E5E;rounded=1;arcSize=12;edgeStyle=orthogonalEdgeStyle;startArrow=none;;endArrow=block;endFill=1;;exitX=0.5;exitY=1.025;exitPerimeter=0;entryX=0.5;entryY=0.002;entryPerimeter=0;" parent="1" source="xtyEx_gyL_2J196OI3PX-45" target="xtyEx_gyL_2J196OI3PX-47" edge="1">
+            <mxGeometry width="100" height="100" relative="1" as="geometry">
+              <Array as="points" />
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="" lucidchartObjectId="ObR0PzknjbRJ" id="xtyEx_gyL_2J196OI3PX-59">
+          <mxCell style="html=1;jettySize=18;whiteSpace=wrap;fontSize=10;fontColor=#333333;fontStyle=1;strokeColor=#5E5E5E;rounded=1;arcSize=12;edgeStyle=orthogonalEdgeStyle;startArrow=none;;endArrow=block;endFill=1;;exitX=0.992;exitY=0.5;exitPerimeter=0;entryX=0.5;entryY=-0.012;entryPerimeter=0;" parent="1" source="xtyEx_gyL_2J196OI3PX-47" target="xtyEx_gyL_2J196OI3PX-61" edge="1">
+            <mxGeometry width="100" height="100" relative="1" as="geometry">
+              <Array as="points" />
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <mxCell id="xtyEx_gyL_2J196OI3PX-60" value="No" style="text;html=1;resizable=0;labelBackgroundColor=#ffffff;align=center;verticalAlign=middle;fontStyle=1;fontColor=#333333;;fontSize=10.666666666666666;" parent="xtyEx_gyL_2J196OI3PX-59" vertex="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <UserObject label="Запрос" lucidchartObjectId="pmR0Ng9LIBhh" id="xtyEx_gyL_2J196OI3PX-61">
+          <mxCell style="html=1;overflow=block;blockSpacing=1;whiteSpace=wrap;;whiteSpace=wrap;fontSize=13;fontColor=#333333;spacing=7;strokeColor=#5e5e5e;strokeOpacity=100;rounded=1;absoluteArcSize=1;arcSize=7;strokeWidth=2;" parent="1" vertex="1">
+            <mxGeometry x="-1383" y="408" width="96" height="72" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="" lucidchartObjectId="pmR01vORASRl" id="xtyEx_gyL_2J196OI3PX-62">
+          <mxCell style="html=1;jettySize=18;whiteSpace=wrap;fontSize=11;strokeColor=#5E5E5E;rounded=1;arcSize=12;edgeStyle=orthogonalEdgeStyle;startArrow=none;;endArrow=block;endFill=1;;exitX=0.5;exitY=1.013;exitPerimeter=0;entryX=0.5;entryY=-0.012;entryPerimeter=0;" parent="1" source="xtyEx_gyL_2J196OI3PX-61" target="xtyEx_gyL_2J196OI3PX-63" edge="1">
+            <mxGeometry width="100" height="100" relative="1" as="geometry">
+              <Array as="points" />
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="conn.commit()" lucidchartObjectId="pmR0GtEunlwD" id="xtyEx_gyL_2J196OI3PX-63">
+          <mxCell style="html=1;overflow=block;blockSpacing=1;whiteSpace=wrap;;whiteSpace=wrap;fontSize=13;fontFamily=Liberation Mono;fontColor=#333333;spacing=7;strokeColor=#5E5E5E;rounded=1;absoluteArcSize=1;arcSize=7;strokeWidth=2;" parent="1" vertex="1">
+            <mxGeometry x="-1392" y="540" width="114" height="72" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <mxCell id="xtyEx_gyL_2J196OI3PX-200" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeColor=#5E5E5E;endFill=1;endArrow=block;arcSize=12;" parent="1" source="xtyEx_gyL_2J196OI3PX-64" target="xtyEx_gyL_2J196OI3PX-199" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <UserObject label=" balance(id, question=False)" lucidchartObjectId="GnR0neNhd.5o" id="xtyEx_gyL_2J196OI3PX-64">
+          <mxCell style="html=1;overflow=block;blockSpacing=1;whiteSpace=wrap;;whiteSpace=wrap;fontSize=12;fontFamily=Liberation Mono;fontColor=#000000;spacing=7;strokeColor=#5e5e5e;strokeOpacity=100;rounded=1;absoluteArcSize=1;arcSize=7;strokeWidth=2;" parent="1" vertex="1">
+            <mxGeometry x="-1824" y="228" width="240" height="36" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="" lucidchartObjectId="joR0k6196Knv" id="xtyEx_gyL_2J196OI3PX-65">
+          <mxCell style="html=1;jettySize=18;whiteSpace=wrap;fontSize=11;strokeColor=#5E5E5E;rounded=1;arcSize=12;edgeStyle=orthogonalEdgeStyle;startArrow=none;;endArrow=block;endFill=1;;exitX=0.5;exitY=1.009;exitPerimeter=0;entryX=0.5;entryY=-0.025;entryPerimeter=0;" parent="1" source="xtyEx_gyL_2J196OI3PX-25" target="xtyEx_gyL_2J196OI3PX-64" edge="1">
+            <mxGeometry width="100" height="100" relative="1" as="geometry">
+              <Array as="points">
+                <mxPoint x="-870" y="204" />
+                <mxPoint x="-1704" y="204" />
+              </Array>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <mxCell id="xtyEx_gyL_2J196OI3PX-202" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#5E5E5E;endFill=1;endArrow=block;arcSize=12;" parent="1" source="xtyEx_gyL_2J196OI3PX-199" target="xtyEx_gyL_2J196OI3PX-201" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <UserObject label="Запрос" lucidchartObjectId="H~Q0LHvacU.Q" id="xtyEx_gyL_2J196OI3PX-199">
+          <mxCell style="html=1;overflow=block;blockSpacing=1;whiteSpace=wrap;;whiteSpace=wrap;fontSize=13;fontColor=#333333;spacing=7;strokeColor=#5E5E5E;rounded=1;absoluteArcSize=1;arcSize=7;strokeWidth=2;" parent="1" vertex="1">
+            <mxGeometry x="-1760" y="288" width="96" height="24" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <mxCell id="xtyEx_gyL_2J196OI3PX-210" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;strokeColor=#5E5E5E;endFill=1;endArrow=block;arcSize=12;" parent="1" source="xtyEx_gyL_2J196OI3PX-201" target="xtyEx_gyL_2J196OI3PX-203" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="xtyEx_gyL_2J196OI3PX-211" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#5E5E5E;endFill=1;endArrow=block;arcSize=12;" parent="1" source="xtyEx_gyL_2J196OI3PX-201" target="xtyEx_gyL_2J196OI3PX-212" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-1712" y="500" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <UserObject label="cursor.fetchone()" lucidchartObjectId="gaR0jCmPV1Eh" id="xtyEx_gyL_2J196OI3PX-201">
+          <mxCell style="html=1;overflow=block;blockSpacing=1;whiteSpace=wrap;;whiteSpace=wrap;fontSize=13;fontFamily=Liberation Mono;fontColor=#333333;spacing=7;strokeColor=#5E5E5E;rounded=1;absoluteArcSize=1;arcSize=7;strokeWidth=2;" parent="1" vertex="1">
+            <mxGeometry x="-1790" y="360" width="156" height="24" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="question is True" lucidchartObjectId="UtR0X-m.kHA2" id="xtyEx_gyL_2J196OI3PX-203">
+          <mxCell style="html=1;overflow=block;blockSpacing=1;whiteSpace=wrap;rhombus;whiteSpace=wrap;fontSize=13;fontColor=#333333;spacing=3;strokeColor=#5e5e5e;strokeOpacity=100;rounded=1;absoluteArcSize=1;arcSize=7;strokeWidth=2;" parent="1" vertex="1">
+            <mxGeometry x="-1916" y="396" width="132" height="72" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="" lucidchartObjectId="_tR0S.PobeLg" id="xtyEx_gyL_2J196OI3PX-204">
+          <mxCell style="html=1;jettySize=18;whiteSpace=wrap;fontSize=10;fontColor=#333333;fontStyle=1;strokeColor=#5E5E5E;rounded=1;arcSize=12;edgeStyle=orthogonalEdgeStyle;startArrow=none;;endArrow=block;endFill=1;;exitX=0.008;exitY=0.5;exitPerimeter=0;entryX=0.5;entryY=0.003;entryPerimeter=0;" parent="1" source="xtyEx_gyL_2J196OI3PX-203" target="xtyEx_gyL_2J196OI3PX-206" edge="1">
+            <mxGeometry width="100" height="100" relative="1" as="geometry">
+              <Array as="points" />
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <mxCell id="xtyEx_gyL_2J196OI3PX-205" value="Yes" style="text;html=1;resizable=0;labelBackgroundColor=#ffffff;align=center;verticalAlign=middle;fontStyle=1;fontColor=#333333;;fontSize=10.666666666666666;" parent="xtyEx_gyL_2J196OI3PX-204" vertex="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <UserObject label="record is None" lucidchartObjectId="duR0.rr3~UBs" id="xtyEx_gyL_2J196OI3PX-206">
+          <mxCell style="html=1;overflow=block;blockSpacing=1;whiteSpace=wrap;rhombus;whiteSpace=wrap;fontSize=13;fontColor=#333333;spacing=3;strokeColor=#5E5E5E;rounded=1;absoluteArcSize=1;arcSize=7;strokeWidth=2;" parent="1" vertex="1">
+            <mxGeometry x="-2000" y="516" width="120" height="72" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="" lucidchartObjectId="suR0aFudgdRR" id="xtyEx_gyL_2J196OI3PX-207">
+          <mxCell style="html=1;jettySize=18;whiteSpace=wrap;fontSize=10;fontColor=#333333;fontStyle=1;strokeColor=#5E5E5E;rounded=1;arcSize=12;edgeStyle=orthogonalEdgeStyle;startArrow=none;;endArrow=block;endFill=1;;exitX=0.991;exitY=0.5;exitPerimeter=0;entryX=0.5;entryY=-0.012;entryPerimeter=0;" parent="1" source="xtyEx_gyL_2J196OI3PX-206" target="xtyEx_gyL_2J196OI3PX-209" edge="1">
+            <mxGeometry width="100" height="100" relative="1" as="geometry">
+              <Array as="points" />
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <mxCell id="xtyEx_gyL_2J196OI3PX-208" value="Yes" style="text;html=1;resizable=0;labelBackgroundColor=#ffffff;align=center;verticalAlign=middle;fontStyle=1;fontColor=#333333;;fontSize=10.666666666666666;" parent="xtyEx_gyL_2J196OI3PX-207" vertex="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <UserObject label="return True" lucidchartObjectId="uuR0ZrlOWGQC" id="xtyEx_gyL_2J196OI3PX-209">
+          <mxCell style="html=1;overflow=block;blockSpacing=1;whiteSpace=wrap;;whiteSpace=wrap;fontSize=13;fontColor=#333333;spacing=7;strokeColor=#5E5E5E;rounded=1;absoluteArcSize=1;arcSize=7;strokeWidth=2;" parent="1" vertex="1">
+            <mxGeometry x="-1868" y="636" width="96" height="72" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <mxCell id="xtyEx_gyL_2J196OI3PX-212" value="return record" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="-1772" y="470" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="-ocyjN4sufj5ShhHaZHQ-8" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeColor=#5E5E5E;endFill=1;endArrow=block;arcSize=12;" edge="1" parent="1" source="-ocyjN4sufj5ShhHaZHQ-2" target="-ocyjN4sufj5ShhHaZHQ-4">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="-2175" y="270" />
+              <mxPoint x="-2206" y="270" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <UserObject label="&lt;font face=&quot;Courier New&quot;&gt; create_order_DB(from_order, to_order, amount)&lt;/font&gt;" lucidchartObjectId="GnR0neNhd.5o" id="-ocyjN4sufj5ShhHaZHQ-2">
+          <mxCell style="html=1;overflow=block;blockSpacing=1;whiteSpace=wrap;;whiteSpace=wrap;fontSize=12;fontFamily=Liberation Mono;fontColor=#000000;spacing=7;strokeColor=#5e5e5e;strokeOpacity=100;rounded=1;absoluteArcSize=1;arcSize=7;strokeWidth=2;" vertex="1" parent="1">
+            <mxGeometry x="-2350" y="228" width="350" height="36" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <mxCell id="-ocyjN4sufj5ShhHaZHQ-12" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeColor=#5E5E5E;endFill=1;endArrow=block;arcSize=12;" edge="1" parent="1" source="-ocyjN4sufj5ShhHaZHQ-4" target="-ocyjN4sufj5ShhHaZHQ-11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <UserObject label="amount &amp;lt; 0" lucidchartObjectId="NiZ0tOdUOv6U" id="-ocyjN4sufj5ShhHaZHQ-4">
+          <mxCell style="html=1;overflow=block;blockSpacing=1;whiteSpace=wrap;rhombus;whiteSpace=wrap;fontSize=13;fontColor=#333333;spacing=3;strokeColor=#5e5e5e;strokeOpacity=100;rounded=1;absoluteArcSize=1;arcSize=7;strokeWidth=2;" vertex="1" parent="1">
+            <mxGeometry x="-2254" y="290" width="96" height="72" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="" lucidchartObjectId="6iZ0m4pT9yBa" id="-ocyjN4sufj5ShhHaZHQ-5">
+          <mxCell style="html=1;jettySize=18;whiteSpace=wrap;fontSize=10;fontColor=#333333;fontStyle=1;strokeColor=#5E5E5E;rounded=1;arcSize=12;edgeStyle=orthogonalEdgeStyle;startArrow=none;;endArrow=block;endFill=1;;exitX=0.009;exitY=0.5;exitPerimeter=0;entryX=0.5;entryY=-0.012;entryPerimeter=0;" edge="1" parent="1" source="-ocyjN4sufj5ShhHaZHQ-4" target="-ocyjN4sufj5ShhHaZHQ-7">
+            <mxGeometry width="100" height="100" relative="1" as="geometry">
+              <Array as="points" />
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <mxCell id="-ocyjN4sufj5ShhHaZHQ-6" value="Yes" style="text;html=1;resizable=0;labelBackgroundColor=#ffffff;align=center;verticalAlign=middle;fontStyle=1;fontColor=#333333;;fontSize=10.666666666666666;" vertex="1" parent="-ocyjN4sufj5ShhHaZHQ-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <UserObject label="raise" lucidchartObjectId="7iZ0SEhDD6Hp" id="-ocyjN4sufj5ShhHaZHQ-7">
+          <mxCell style="html=1;overflow=block;blockSpacing=1;whiteSpace=wrap;;whiteSpace=wrap;fontSize=13;fontColor=#333333;spacing=7;strokeColor=#5E5E5E;rounded=1;absoluteArcSize=1;arcSize=7;strokeWidth=2;" vertex="1" parent="1">
+            <mxGeometry x="-2350" y="398" width="96" height="72" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <mxCell id="-ocyjN4sufj5ShhHaZHQ-14" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#5E5E5E;endFill=1;endArrow=block;arcSize=12;" edge="1" parent="1" source="-ocyjN4sufj5ShhHaZHQ-11" target="-ocyjN4sufj5ShhHaZHQ-13">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <UserObject label="Запрос" lucidchartObjectId="H~Q0LHvacU.Q" id="-ocyjN4sufj5ShhHaZHQ-11">
+          <mxCell style="html=1;overflow=block;blockSpacing=1;whiteSpace=wrap;;whiteSpace=wrap;fontSize=13;fontColor=#333333;spacing=7;strokeColor=#5E5E5E;rounded=1;absoluteArcSize=1;arcSize=7;strokeWidth=2;" vertex="1" parent="1">
+            <mxGeometry x="-2220" y="398" width="96" height="24" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <mxCell id="-ocyjN4sufj5ShhHaZHQ-16" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#5E5E5E;endFill=1;endArrow=block;arcSize=12;" edge="1" parent="1" source="-ocyjN4sufj5ShhHaZHQ-13" target="-ocyjN4sufj5ShhHaZHQ-15">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="-2172" y="480" />
+              <mxPoint x="-2162" y="480" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <UserObject label="Запрос" lucidchartObjectId="H~Q0LHvacU.Q" id="-ocyjN4sufj5ShhHaZHQ-13">
+          <mxCell style="html=1;overflow=block;blockSpacing=1;whiteSpace=wrap;;whiteSpace=wrap;fontSize=13;fontColor=#333333;spacing=7;strokeColor=#5E5E5E;rounded=1;absoluteArcSize=1;arcSize=7;strokeWidth=2;" vertex="1" parent="1">
+            <mxGeometry x="-2220" y="446" width="96" height="24" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <mxCell id="-ocyjN4sufj5ShhHaZHQ-21" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#5E5E5E;endFill=1;endArrow=block;arcSize=12;" edge="1" parent="1" source="-ocyjN4sufj5ShhHaZHQ-15" target="-ocyjN4sufj5ShhHaZHQ-17">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <UserObject label="cursor.fetchone()" lucidchartObjectId="gaR0jCmPV1Eh" id="-ocyjN4sufj5ShhHaZHQ-15">
+          <mxCell style="html=1;overflow=block;blockSpacing=1;whiteSpace=wrap;;whiteSpace=wrap;fontSize=13;fontFamily=Liberation Mono;fontColor=#333333;spacing=7;strokeColor=#5E5E5E;rounded=1;absoluteArcSize=1;arcSize=7;strokeWidth=2;" vertex="1" parent="1">
+            <mxGeometry x="-2240" y="492" width="156" height="24" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <mxCell id="-ocyjN4sufj5ShhHaZHQ-23" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#5E5E5E;endFill=1;endArrow=block;arcSize=12;" edge="1" parent="1" source="-ocyjN4sufj5ShhHaZHQ-17" target="-ocyjN4sufj5ShhHaZHQ-22">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <UserObject label="record is None" lucidchartObjectId="NiZ0tOdUOv6U" id="-ocyjN4sufj5ShhHaZHQ-17">
+          <mxCell style="html=1;overflow=block;blockSpacing=1;whiteSpace=wrap;rhombus;whiteSpace=wrap;fontSize=13;fontColor=#333333;spacing=3;strokeColor=#5e5e5e;strokeOpacity=100;rounded=1;absoluteArcSize=1;arcSize=7;strokeWidth=2;" vertex="1" parent="1">
+            <mxGeometry x="-2222" y="540" width="120" height="72" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="" lucidchartObjectId="6iZ0m4pT9yBa" id="-ocyjN4sufj5ShhHaZHQ-18">
+          <mxCell style="html=1;jettySize=18;whiteSpace=wrap;fontSize=10;fontColor=#333333;fontStyle=1;strokeColor=#5E5E5E;rounded=1;arcSize=12;edgeStyle=orthogonalEdgeStyle;startArrow=none;;endArrow=block;endFill=1;;exitX=0.009;exitY=0.5;exitPerimeter=0;entryX=0.5;entryY=-0.012;entryPerimeter=0;" edge="1" parent="1" source="-ocyjN4sufj5ShhHaZHQ-17" target="-ocyjN4sufj5ShhHaZHQ-20">
+            <mxGeometry width="100" height="100" relative="1" as="geometry">
+              <Array as="points" />
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <mxCell id="-ocyjN4sufj5ShhHaZHQ-19" value="Yes" style="text;html=1;resizable=0;labelBackgroundColor=#ffffff;align=center;verticalAlign=middle;fontStyle=1;fontColor=#333333;;fontSize=10.666666666666666;" vertex="1" parent="-ocyjN4sufj5ShhHaZHQ-18">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <UserObject label="raise" lucidchartObjectId="7iZ0SEhDD6Hp" id="-ocyjN4sufj5ShhHaZHQ-20">
+          <mxCell style="html=1;overflow=block;blockSpacing=1;whiteSpace=wrap;;whiteSpace=wrap;fontSize=13;fontColor=#333333;spacing=7;strokeColor=#5E5E5E;rounded=1;absoluteArcSize=1;arcSize=7;strokeWidth=2;" vertex="1" parent="1">
+            <mxGeometry x="-2380" y="612" width="96" height="72" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <mxCell id="-ocyjN4sufj5ShhHaZHQ-25" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeColor=#5E5E5E;endFill=1;endArrow=block;arcSize=12;" edge="1" parent="1" source="-ocyjN4sufj5ShhHaZHQ-22" target="-ocyjN4sufj5ShhHaZHQ-24">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <UserObject label="Запрос" lucidchartObjectId="H~Q0LHvacU.Q" id="-ocyjN4sufj5ShhHaZHQ-22">
+          <mxCell style="html=1;overflow=block;blockSpacing=1;whiteSpace=wrap;;whiteSpace=wrap;fontSize=13;fontColor=#333333;spacing=7;strokeColor=#5E5E5E;rounded=1;absoluteArcSize=1;arcSize=7;strokeWidth=2;" vertex="1" parent="1">
+            <mxGeometry x="-2210" y="636" width="96" height="24" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <mxCell id="-ocyjN4sufj5ShhHaZHQ-34" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#5E5E5E;endFill=1;endArrow=block;arcSize=12;" edge="1" parent="1" source="-ocyjN4sufj5ShhHaZHQ-24" target="-ocyjN4sufj5ShhHaZHQ-30">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <UserObject label="cursor.fetchone()" lucidchartObjectId="gaR0jCmPV1Eh" id="-ocyjN4sufj5ShhHaZHQ-24">
+          <mxCell style="html=1;overflow=block;blockSpacing=1;whiteSpace=wrap;;whiteSpace=wrap;fontSize=13;fontFamily=Liberation Mono;fontColor=#333333;spacing=7;strokeColor=#5E5E5E;rounded=1;absoluteArcSize=1;arcSize=7;strokeWidth=2;" vertex="1" parent="1">
+            <mxGeometry x="-2240" y="696" width="156" height="24" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <mxCell id="-ocyjN4sufj5ShhHaZHQ-39" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeColor=#5E5E5E;endFill=1;endArrow=block;arcSize=12;" edge="1" parent="1" source="-ocyjN4sufj5ShhHaZHQ-30" target="-ocyjN4sufj5ShhHaZHQ-35">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <UserObject label="record_to is None" lucidchartObjectId="NiZ0tOdUOv6U" id="-ocyjN4sufj5ShhHaZHQ-30">
+          <mxCell style="html=1;overflow=block;blockSpacing=1;whiteSpace=wrap;rhombus;whiteSpace=wrap;fontSize=13;fontColor=#333333;spacing=3;strokeColor=#5e5e5e;strokeOpacity=100;rounded=1;absoluteArcSize=1;arcSize=7;strokeWidth=2;" vertex="1" parent="1">
+            <mxGeometry x="-2240" y="760" width="156" height="72" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="" lucidchartObjectId="6iZ0m4pT9yBa" id="-ocyjN4sufj5ShhHaZHQ-31">
+          <mxCell style="html=1;jettySize=18;whiteSpace=wrap;fontSize=10;fontColor=#333333;fontStyle=1;strokeColor=#5E5E5E;rounded=1;arcSize=12;edgeStyle=orthogonalEdgeStyle;startArrow=none;;endArrow=block;endFill=1;;exitX=0.007;exitY=0.5;exitPerimeter=0;entryX=0.5;entryY=-0.012;entryPerimeter=0;" edge="1" parent="1" source="-ocyjN4sufj5ShhHaZHQ-30" target="-ocyjN4sufj5ShhHaZHQ-33">
+            <mxGeometry width="100" height="100" relative="1" as="geometry">
+              <Array as="points" />
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <mxCell id="-ocyjN4sufj5ShhHaZHQ-32" value="Yes" style="text;html=1;resizable=0;labelBackgroundColor=#ffffff;align=center;verticalAlign=middle;fontStyle=1;fontColor=#333333;;fontSize=10.666666666666666;" vertex="1" parent="-ocyjN4sufj5ShhHaZHQ-31">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <UserObject label="raise" lucidchartObjectId="7iZ0SEhDD6Hp" id="-ocyjN4sufj5ShhHaZHQ-33">
+          <mxCell style="html=1;overflow=block;blockSpacing=1;whiteSpace=wrap;;whiteSpace=wrap;fontSize=13;fontColor=#333333;spacing=7;strokeColor=#5E5E5E;rounded=1;absoluteArcSize=1;arcSize=7;strokeWidth=2;" vertex="1" parent="1">
+            <mxGeometry x="-2380" y="832" width="96" height="72" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <mxCell id="-ocyjN4sufj5ShhHaZHQ-44" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeColor=#5E5E5E;endFill=1;endArrow=block;arcSize=12;" edge="1" parent="1" source="-ocyjN4sufj5ShhHaZHQ-35" target="-ocyjN4sufj5ShhHaZHQ-40">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <UserObject label="record[0] &amp;lt; 0" lucidchartObjectId="NiZ0tOdUOv6U" id="-ocyjN4sufj5ShhHaZHQ-35">
+          <mxCell style="html=1;overflow=block;blockSpacing=1;whiteSpace=wrap;rhombus;whiteSpace=wrap;fontSize=13;fontColor=#333333;spacing=3;strokeColor=#5e5e5e;strokeOpacity=100;rounded=1;absoluteArcSize=1;arcSize=7;strokeWidth=2;" vertex="1" parent="1">
+            <mxGeometry x="-2240" y="860" width="156" height="72" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="" lucidchartObjectId="6iZ0m4pT9yBa" id="-ocyjN4sufj5ShhHaZHQ-36">
+          <mxCell style="html=1;jettySize=18;whiteSpace=wrap;fontSize=10;fontColor=#333333;fontStyle=1;strokeColor=#5E5E5E;rounded=1;arcSize=12;edgeStyle=orthogonalEdgeStyle;startArrow=none;;endArrow=block;endFill=1;;exitX=0.007;exitY=0.5;exitPerimeter=0;entryX=0.5;entryY=-0.012;entryPerimeter=0;" edge="1" parent="1" source="-ocyjN4sufj5ShhHaZHQ-35" target="-ocyjN4sufj5ShhHaZHQ-38">
+            <mxGeometry width="100" height="100" relative="1" as="geometry">
+              <Array as="points">
+                <mxPoint x="-2239" y="920" />
+                <mxPoint x="-2332" y="920" />
+              </Array>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <mxCell id="-ocyjN4sufj5ShhHaZHQ-37" value="Yes" style="text;html=1;resizable=0;labelBackgroundColor=#ffffff;align=center;verticalAlign=middle;fontStyle=1;fontColor=#333333;;fontSize=10.666666666666666;" vertex="1" parent="-ocyjN4sufj5ShhHaZHQ-36">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <UserObject label="raise" lucidchartObjectId="7iZ0SEhDD6Hp" id="-ocyjN4sufj5ShhHaZHQ-38">
+          <mxCell style="html=1;overflow=block;blockSpacing=1;whiteSpace=wrap;;whiteSpace=wrap;fontSize=13;fontColor=#333333;spacing=7;strokeColor=#5E5E5E;rounded=1;absoluteArcSize=1;arcSize=7;strokeWidth=2;" vertex="1" parent="1">
+            <mxGeometry x="-2380" y="950" width="96" height="72" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <mxCell id="-ocyjN4sufj5ShhHaZHQ-47" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="-ocyjN4sufj5ShhHaZHQ-40" target="-ocyjN4sufj5ShhHaZHQ-45">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <UserObject label="record[0] - amount &amp;lt; 0" lucidchartObjectId="NiZ0tOdUOv6U" id="-ocyjN4sufj5ShhHaZHQ-40">
+          <mxCell style="html=1;overflow=block;blockSpacing=1;whiteSpace=wrap;rhombus;whiteSpace=wrap;fontSize=13;fontColor=#333333;spacing=3;strokeColor=#5e5e5e;strokeOpacity=100;rounded=1;absoluteArcSize=1;arcSize=7;strokeWidth=2;" vertex="1" parent="1">
+            <mxGeometry x="-2252" y="950" width="180" height="72" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="" lucidchartObjectId="6iZ0m4pT9yBa" id="-ocyjN4sufj5ShhHaZHQ-41">
+          <mxCell style="html=1;jettySize=18;whiteSpace=wrap;fontSize=10;fontColor=#333333;fontStyle=1;strokeColor=#5E5E5E;rounded=1;arcSize=12;edgeStyle=orthogonalEdgeStyle;startArrow=none;;endArrow=block;endFill=1;;exitX=0.005;exitY=0.5;exitPerimeter=0;entryX=0.5;entryY=-0.012;entryPerimeter=0;" edge="1" parent="1" source="-ocyjN4sufj5ShhHaZHQ-40" target="-ocyjN4sufj5ShhHaZHQ-43">
+            <mxGeometry width="100" height="100" relative="1" as="geometry">
+              <Array as="points">
+                <mxPoint x="-2263" y="1060" />
+                <mxPoint x="-2332" y="1060" />
+              </Array>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <mxCell id="-ocyjN4sufj5ShhHaZHQ-42" value="Yes" style="text;html=1;resizable=0;labelBackgroundColor=#ffffff;align=center;verticalAlign=middle;fontStyle=1;fontColor=#333333;;fontSize=10.666666666666666;" vertex="1" parent="-ocyjN4sufj5ShhHaZHQ-41">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <UserObject label="raise" lucidchartObjectId="7iZ0SEhDD6Hp" id="-ocyjN4sufj5ShhHaZHQ-43">
+          <mxCell style="html=1;overflow=block;blockSpacing=1;whiteSpace=wrap;;whiteSpace=wrap;fontSize=13;fontColor=#333333;spacing=7;strokeColor=#5E5E5E;rounded=1;absoluteArcSize=1;arcSize=7;strokeWidth=2;" vertex="1" parent="1">
+            <mxGeometry x="-2380" y="1078" width="96" height="72" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <mxCell id="-ocyjN4sufj5ShhHaZHQ-48" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="-ocyjN4sufj5ShhHaZHQ-45" target="-ocyjN4sufj5ShhHaZHQ-46">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <UserObject label="Запрос" lucidchartObjectId="H~Q0LHvacU.Q" id="-ocyjN4sufj5ShhHaZHQ-45">
+          <mxCell style="html=1;overflow=block;blockSpacing=1;whiteSpace=wrap;;whiteSpace=wrap;fontSize=13;fontColor=#333333;spacing=7;strokeColor=#5E5E5E;rounded=1;absoluteArcSize=1;arcSize=7;strokeWidth=2;" vertex="1" parent="1">
+            <mxGeometry x="-2210" y="1054" width="96" height="24" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <mxCell id="-ocyjN4sufj5ShhHaZHQ-50" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="-ocyjN4sufj5ShhHaZHQ-46" target="-ocyjN4sufj5ShhHaZHQ-49">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <UserObject label="Запрос" lucidchartObjectId="H~Q0LHvacU.Q" id="-ocyjN4sufj5ShhHaZHQ-46">
+          <mxCell style="html=1;overflow=block;blockSpacing=1;whiteSpace=wrap;;whiteSpace=wrap;fontSize=13;fontColor=#333333;spacing=7;strokeColor=#5E5E5E;rounded=1;absoluteArcSize=1;arcSize=7;strokeWidth=2;" vertex="1" parent="1">
+            <mxGeometry x="-2210" y="1120" width="96" height="24" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="conn.commit()" lucidchartObjectId="pmR0GtEunlwD" id="-ocyjN4sufj5ShhHaZHQ-49">
+          <mxCell style="html=1;overflow=block;blockSpacing=1;whiteSpace=wrap;;whiteSpace=wrap;fontSize=13;fontFamily=Liberation Mono;fontColor=#333333;spacing=7;strokeColor=#5E5E5E;rounded=1;absoluteArcSize=1;arcSize=7;strokeWidth=2;" vertex="1" parent="1">
+            <mxGeometry x="-2219" y="1190" width="114" height="34" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <mxCell id="-ocyjN4sufj5ShhHaZHQ-59" style="edgeStyle=orthogonalEdgeStyle;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeColor=#5E5E5E;fontFamily=Liberation Mono;fontSize=13;fontColor=#333333;" edge="1" parent="1" source="-ocyjN4sufj5ShhHaZHQ-52" target="-ocyjN4sufj5ShhHaZHQ-57">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <UserObject label="&lt;font face=&quot;Courier New&quot;&gt;add_logics(id, amount)&lt;/font&gt;" lucidchartObjectId="GnR0neNhd.5o" id="-ocyjN4sufj5ShhHaZHQ-52">
+          <mxCell style="html=1;overflow=block;blockSpacing=1;whiteSpace=wrap;;whiteSpace=wrap;fontSize=12;fontFamily=Liberation Mono;fontColor=#000000;spacing=7;strokeColor=#5e5e5e;strokeOpacity=100;rounded=1;absoluteArcSize=1;arcSize=7;strokeWidth=2;" vertex="1" parent="1">
+            <mxGeometry x="-2650" y="228" width="180" height="36" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <mxCell id="-ocyjN4sufj5ShhHaZHQ-56" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#5E5E5E;endFill=1;endArrow=block;arcSize=12;" edge="1" parent="1" source="-ocyjN4sufj5ShhHaZHQ-57" target="-ocyjN4sufj5ShhHaZHQ-58">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="-2560" y="340" />
+              <mxPoint x="-2560" y="340" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <UserObject label="Запрос" lucidchartObjectId="H~Q0LHvacU.Q" id="-ocyjN4sufj5ShhHaZHQ-57">
+          <mxCell style="html=1;overflow=block;blockSpacing=1;whiteSpace=wrap;;whiteSpace=wrap;fontSize=13;fontColor=#333333;spacing=7;strokeColor=#5E5E5E;rounded=1;absoluteArcSize=1;arcSize=7;strokeWidth=2;" vertex="1" parent="1">
+            <mxGeometry x="-2608" y="300" width="96" height="24" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <mxCell id="-ocyjN4sufj5ShhHaZHQ-67" style="edgeStyle=orthogonalEdgeStyle;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;endArrow=block;endFill=1;strokeColor=#5E5E5E;fontSize=10;fontColor=#333333;" edge="1" parent="1" source="-ocyjN4sufj5ShhHaZHQ-58" target="-ocyjN4sufj5ShhHaZHQ-63">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <UserObject label="cursor.fetchone()" lucidchartObjectId="gaR0jCmPV1Eh" id="-ocyjN4sufj5ShhHaZHQ-58">
+          <mxCell style="html=1;overflow=block;blockSpacing=1;whiteSpace=wrap;;whiteSpace=wrap;fontSize=13;fontFamily=Liberation Mono;fontColor=#333333;spacing=7;strokeColor=#5E5E5E;rounded=1;absoluteArcSize=1;arcSize=7;strokeWidth=2;" vertex="1" parent="1">
+            <mxGeometry x="-2638" y="354" width="156" height="24" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <mxCell id="-ocyjN4sufj5ShhHaZHQ-70" style="edgeStyle=orthogonalEdgeStyle;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;endArrow=block;endFill=1;strokeColor=#5E5E5E;fontSize=10;fontColor=#333333;" edge="1" parent="1" source="-ocyjN4sufj5ShhHaZHQ-63" target="-ocyjN4sufj5ShhHaZHQ-69">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <UserObject label="record is None" lucidchartObjectId="NiZ0tOdUOv6U" id="-ocyjN4sufj5ShhHaZHQ-63">
+          <mxCell style="html=1;overflow=block;blockSpacing=1;whiteSpace=wrap;rhombus;whiteSpace=wrap;fontSize=13;fontColor=#333333;spacing=3;strokeColor=#5e5e5e;strokeOpacity=100;rounded=1;absoluteArcSize=1;arcSize=7;strokeWidth=2;" vertex="1" parent="1">
+            <mxGeometry x="-2650" y="408" width="180" height="72" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="" lucidchartObjectId="6iZ0m4pT9yBa" id="-ocyjN4sufj5ShhHaZHQ-64">
+          <mxCell style="html=1;jettySize=18;whiteSpace=wrap;fontSize=10;fontColor=#333333;fontStyle=1;strokeColor=#5E5E5E;rounded=1;arcSize=12;edgeStyle=orthogonalEdgeStyle;startArrow=none;;endArrow=block;endFill=1;;exitX=0.005;exitY=0.5;exitPerimeter=0;entryX=0.5;entryY=-0.012;entryPerimeter=0;" edge="1" parent="1" source="-ocyjN4sufj5ShhHaZHQ-63" target="-ocyjN4sufj5ShhHaZHQ-66">
+            <mxGeometry width="100" height="100" relative="1" as="geometry">
+              <Array as="points" />
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <mxCell id="-ocyjN4sufj5ShhHaZHQ-65" value="Yes" style="text;html=1;resizable=0;labelBackgroundColor=#ffffff;align=center;verticalAlign=middle;fontStyle=1;fontColor=#333333;;fontSize=10.666666666666666;" vertex="1" parent="-ocyjN4sufj5ShhHaZHQ-64">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <UserObject label="raise" lucidchartObjectId="7iZ0SEhDD6Hp" id="-ocyjN4sufj5ShhHaZHQ-66">
+          <mxCell style="html=1;overflow=block;blockSpacing=1;whiteSpace=wrap;;whiteSpace=wrap;fontSize=13;fontColor=#333333;spacing=7;strokeColor=#5E5E5E;rounded=1;absoluteArcSize=1;arcSize=7;strokeWidth=2;" vertex="1" parent="1">
+            <mxGeometry x="-2746" y="516" width="96" height="72" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="conn.commit()" lucidchartObjectId="pmR0GtEunlwD" id="-ocyjN4sufj5ShhHaZHQ-68">
+          <mxCell style="html=1;overflow=block;blockSpacing=1;whiteSpace=wrap;;whiteSpace=wrap;fontSize=13;fontFamily=Liberation Mono;fontColor=#333333;spacing=7;strokeColor=#5E5E5E;rounded=1;absoluteArcSize=1;arcSize=7;strokeWidth=2;" vertex="1" parent="1">
+            <mxGeometry x="-2617" y="578" width="114" height="34" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <mxCell id="-ocyjN4sufj5ShhHaZHQ-71" style="edgeStyle=orthogonalEdgeStyle;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;endArrow=block;endFill=1;strokeColor=#5E5E5E;fontSize=10;fontColor=#333333;" edge="1" parent="1" source="-ocyjN4sufj5ShhHaZHQ-69" target="-ocyjN4sufj5ShhHaZHQ-68">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <UserObject label="Запрос" lucidchartObjectId="H~Q0LHvacU.Q" id="-ocyjN4sufj5ShhHaZHQ-69">
+          <mxCell style="html=1;overflow=block;blockSpacing=1;whiteSpace=wrap;;whiteSpace=wrap;fontSize=13;fontColor=#333333;spacing=7;strokeColor=#5E5E5E;rounded=1;absoluteArcSize=1;arcSize=7;strokeWidth=2;" vertex="1" parent="1">
+            <mxGeometry x="-2608" y="516" width="96" height="24" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <mxCell id="-ocyjN4sufj5ShhHaZHQ-80" style="edgeStyle=orthogonalEdgeStyle;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeColor=#5E5E5E;fontSize=10;fontColor=#333333;" edge="1" parent="1" source="-ocyjN4sufj5ShhHaZHQ-72" target="-ocyjN4sufj5ShhHaZHQ-78">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="-ocyjN4sufj5ShhHaZHQ-72" value="&lt;font face=&quot;Courier New&quot; style=&quot;font-size: 12px&quot;&gt;ID_from_username(username)&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#5E5E5E;strokeWidth=2;fontFamily=Liberation Mono;fontSize=10;fontColor=#333333;" vertex="1" parent="1">
+          <mxGeometry x="-3020" y="228" width="194" height="36" as="geometry" />
+        </mxCell>
+        <mxCell id="-ocyjN4sufj5ShhHaZHQ-77" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#5E5E5E;endFill=1;endArrow=block;arcSize=12;" edge="1" parent="1" source="-ocyjN4sufj5ShhHaZHQ-78" target="-ocyjN4sufj5ShhHaZHQ-79">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="-2923" y="340" />
+              <mxPoint x="-2923" y="340" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <UserObject label="Запрос" lucidchartObjectId="H~Q0LHvacU.Q" id="-ocyjN4sufj5ShhHaZHQ-78">
+          <mxCell style="html=1;overflow=block;blockSpacing=1;whiteSpace=wrap;;whiteSpace=wrap;fontSize=13;fontColor=#333333;spacing=7;strokeColor=#5E5E5E;rounded=1;absoluteArcSize=1;arcSize=7;strokeWidth=2;" vertex="1" parent="1">
+            <mxGeometry x="-2971" y="300" width="96" height="24" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <mxCell id="-ocyjN4sufj5ShhHaZHQ-85" style="edgeStyle=orthogonalEdgeStyle;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeColor=#5E5E5E;fontSize=10;fontColor=#333333;" edge="1" parent="1" source="-ocyjN4sufj5ShhHaZHQ-79" target="-ocyjN4sufj5ShhHaZHQ-81">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <UserObject label="cursor.fetchone()" lucidchartObjectId="gaR0jCmPV1Eh" id="-ocyjN4sufj5ShhHaZHQ-79">
+          <mxCell style="html=1;overflow=block;blockSpacing=1;whiteSpace=wrap;;whiteSpace=wrap;fontSize=13;fontFamily=Liberation Mono;fontColor=#333333;spacing=7;strokeColor=#5E5E5E;rounded=1;absoluteArcSize=1;arcSize=7;strokeWidth=2;" vertex="1" parent="1">
+            <mxGeometry x="-3001" y="354" width="156" height="24" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <mxCell id="-ocyjN4sufj5ShhHaZHQ-88" style="edgeStyle=orthogonalEdgeStyle;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;endArrow=block;endFill=1;strokeColor=#5E5E5E;fontFamily=Liberation Mono;fontSize=10;fontColor=#333333;" edge="1" parent="1" source="-ocyjN4sufj5ShhHaZHQ-81" target="-ocyjN4sufj5ShhHaZHQ-87">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <UserObject label="record is None" lucidchartObjectId="NiZ0tOdUOv6U" id="-ocyjN4sufj5ShhHaZHQ-81">
+          <mxCell style="html=1;overflow=block;blockSpacing=1;whiteSpace=wrap;rhombus;whiteSpace=wrap;fontSize=13;fontColor=#333333;spacing=3;strokeColor=#5e5e5e;strokeOpacity=100;rounded=1;absoluteArcSize=1;arcSize=7;strokeWidth=2;" vertex="1" parent="1">
+            <mxGeometry x="-3013" y="410" width="180" height="72" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="" lucidchartObjectId="6iZ0m4pT9yBa" id="-ocyjN4sufj5ShhHaZHQ-82">
+          <mxCell style="html=1;jettySize=18;whiteSpace=wrap;fontSize=10;fontColor=#333333;fontStyle=1;strokeColor=#5E5E5E;rounded=1;arcSize=12;edgeStyle=orthogonalEdgeStyle;startArrow=none;;endArrow=block;endFill=1;;exitX=0.005;exitY=0.5;exitPerimeter=0;entryX=0.5;entryY=-0.012;entryPerimeter=0;" edge="1" parent="1" source="-ocyjN4sufj5ShhHaZHQ-81" target="-ocyjN4sufj5ShhHaZHQ-84">
+            <mxGeometry width="100" height="100" relative="1" as="geometry">
+              <Array as="points" />
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <mxCell id="-ocyjN4sufj5ShhHaZHQ-83" value="Yes" style="text;html=1;resizable=0;labelBackgroundColor=#ffffff;align=center;verticalAlign=middle;fontStyle=1;fontColor=#333333;;fontSize=10.666666666666666;" vertex="1" parent="-ocyjN4sufj5ShhHaZHQ-82">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <UserObject label="raise" lucidchartObjectId="7iZ0SEhDD6Hp" id="-ocyjN4sufj5ShhHaZHQ-84">
+          <mxCell style="html=1;overflow=block;blockSpacing=1;whiteSpace=wrap;;whiteSpace=wrap;fontSize=13;fontColor=#333333;spacing=7;strokeColor=#5E5E5E;rounded=1;absoluteArcSize=1;arcSize=7;strokeWidth=2;" vertex="1" parent="1">
+            <mxGeometry x="-3160" y="470" width="96" height="72" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <mxCell id="-ocyjN4sufj5ShhHaZHQ-87" value="&lt;font face=&quot;Courier New&quot; style=&quot;font-size: 12px&quot;&gt;return&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#5E5E5E;strokeWidth=2;fontFamily=Liberation Mono;fontSize=10;fontColor=#333333;" vertex="1" parent="1">
+          <mxGeometry x="-2983" y="522" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="-ocyjN4sufj5ShhHaZHQ-103" style="edgeStyle=orthogonalEdgeStyle;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;endArrow=block;endFill=1;strokeColor=#5E5E5E;fontFamily=Liberation Mono;fontSize=10;fontColor=#333333;" edge="1" parent="1" source="-ocyjN4sufj5ShhHaZHQ-89" target="-ocyjN4sufj5ShhHaZHQ-101">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="-ocyjN4sufj5ShhHaZHQ-89" value="&lt;font style=&quot;font-size: 12px&quot; face=&quot;Courier New&quot;&gt;minus_logiks(id, amount)&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#5E5E5E;strokeWidth=2;fontFamily=Liberation Mono;fontSize=10;fontColor=#333333;" vertex="1" parent="1">
+          <mxGeometry x="-3420" y="228" width="180" height="36" as="geometry" />
+        </mxCell>
+        <mxCell id="-ocyjN4sufj5ShhHaZHQ-100" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#5E5E5E;endFill=1;endArrow=block;arcSize=12;" edge="1" parent="1" source="-ocyjN4sufj5ShhHaZHQ-101" target="-ocyjN4sufj5ShhHaZHQ-102">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="-3352" y="340" />
+              <mxPoint x="-3352" y="340" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <UserObject label="Запрос" lucidchartObjectId="H~Q0LHvacU.Q" id="-ocyjN4sufj5ShhHaZHQ-101">
+          <mxCell style="html=1;overflow=block;blockSpacing=1;whiteSpace=wrap;;whiteSpace=wrap;fontSize=13;fontColor=#333333;spacing=7;strokeColor=#5E5E5E;rounded=1;absoluteArcSize=1;arcSize=7;strokeWidth=2;" vertex="1" parent="1">
+            <mxGeometry x="-3400" y="300" width="96" height="24" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <mxCell id="-ocyjN4sufj5ShhHaZHQ-110" style="edgeStyle=orthogonalEdgeStyle;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;endArrow=block;endFill=1;strokeColor=#5E5E5E;fontFamily=Liberation Mono;fontSize=10;fontColor=#333333;" edge="1" parent="1" source="-ocyjN4sufj5ShhHaZHQ-102" target="-ocyjN4sufj5ShhHaZHQ-105">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <UserObject label="cursor.fetchone()" lucidchartObjectId="gaR0jCmPV1Eh" id="-ocyjN4sufj5ShhHaZHQ-102">
+          <mxCell style="html=1;overflow=block;blockSpacing=1;whiteSpace=wrap;;whiteSpace=wrap;fontSize=13;fontFamily=Liberation Mono;fontColor=#333333;spacing=7;strokeColor=#5E5E5E;rounded=1;absoluteArcSize=1;arcSize=7;strokeWidth=2;" vertex="1" parent="1">
+            <mxGeometry x="-3430" y="354" width="156" height="24" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <mxCell id="-ocyjN4sufj5ShhHaZHQ-113" style="edgeStyle=orthogonalEdgeStyle;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeColor=#5E5E5E;fontFamily=Liberation Mono;fontSize=10;fontColor=#333333;" edge="1" parent="1" source="-ocyjN4sufj5ShhHaZHQ-105" target="-ocyjN4sufj5ShhHaZHQ-112">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <UserObject label="record is None" lucidchartObjectId="NiZ0tOdUOv6U" id="-ocyjN4sufj5ShhHaZHQ-105">
+          <mxCell style="html=1;overflow=block;blockSpacing=1;whiteSpace=wrap;rhombus;whiteSpace=wrap;fontSize=13;fontColor=#333333;spacing=3;strokeColor=#5e5e5e;strokeOpacity=100;rounded=1;absoluteArcSize=1;arcSize=7;strokeWidth=2;" vertex="1" parent="1">
+            <mxGeometry x="-3442" y="408" width="180" height="72" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="" lucidchartObjectId="6iZ0m4pT9yBa" id="-ocyjN4sufj5ShhHaZHQ-106">
+          <mxCell style="html=1;jettySize=18;whiteSpace=wrap;fontSize=10;fontColor=#333333;fontStyle=1;strokeColor=#5E5E5E;rounded=1;arcSize=12;edgeStyle=orthogonalEdgeStyle;startArrow=none;;endArrow=block;endFill=1;;exitX=0.005;exitY=0.5;exitPerimeter=0;entryX=0.5;entryY=-0.012;entryPerimeter=0;" edge="1" parent="1" source="-ocyjN4sufj5ShhHaZHQ-105" target="-ocyjN4sufj5ShhHaZHQ-108">
+            <mxGeometry width="100" height="100" relative="1" as="geometry">
+              <Array as="points" />
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <mxCell id="-ocyjN4sufj5ShhHaZHQ-107" value="Yes" style="text;html=1;resizable=0;labelBackgroundColor=#ffffff;align=center;verticalAlign=middle;fontStyle=1;fontColor=#333333;;fontSize=10.666666666666666;" vertex="1" parent="-ocyjN4sufj5ShhHaZHQ-106">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <UserObject label="raise" lucidchartObjectId="7iZ0SEhDD6Hp" id="-ocyjN4sufj5ShhHaZHQ-108">
+          <mxCell style="html=1;overflow=block;blockSpacing=1;whiteSpace=wrap;;whiteSpace=wrap;fontSize=13;fontColor=#333333;spacing=7;strokeColor=#5E5E5E;rounded=1;absoluteArcSize=1;arcSize=7;strokeWidth=2;" vertex="1" parent="1">
+            <mxGeometry x="-3590" y="480" width="96" height="72" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="conn.commit()" lucidchartObjectId="pmR0GtEunlwD" id="-ocyjN4sufj5ShhHaZHQ-111">
+          <mxCell style="html=1;overflow=block;blockSpacing=1;whiteSpace=wrap;;whiteSpace=wrap;fontSize=13;fontFamily=Liberation Mono;fontColor=#333333;spacing=7;strokeColor=#5E5E5E;rounded=1;absoluteArcSize=1;arcSize=7;strokeWidth=2;" vertex="1" parent="1">
+            <mxGeometry x="-3409" y="568" width="114" height="34" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <mxCell id="-ocyjN4sufj5ShhHaZHQ-114" style="edgeStyle=orthogonalEdgeStyle;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeColor=#5E5E5E;fontFamily=Liberation Mono;fontSize=10;fontColor=#333333;" edge="1" parent="1" source="-ocyjN4sufj5ShhHaZHQ-112" target="-ocyjN4sufj5ShhHaZHQ-111">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <UserObject label="Запрос" lucidchartObjectId="H~Q0LHvacU.Q" id="-ocyjN4sufj5ShhHaZHQ-112">
+          <mxCell style="html=1;overflow=block;blockSpacing=1;whiteSpace=wrap;;whiteSpace=wrap;fontSize=13;fontColor=#333333;spacing=7;strokeColor=#5E5E5E;rounded=1;absoluteArcSize=1;arcSize=7;strokeWidth=2;" vertex="1" parent="1">
+            <mxGeometry x="-3400" y="516" width="96" height="24" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <mxCell id="-ocyjN4sufj5ShhHaZHQ-118" style="edgeStyle=orthogonalEdgeStyle;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeColor=#5E5E5E;fontFamily=Liberation Mono;fontSize=10;fontColor=#333333;" edge="1" parent="1" source="-ocyjN4sufj5ShhHaZHQ-115" target="-ocyjN4sufj5ShhHaZHQ-117">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="-ocyjN4sufj5ShhHaZHQ-115" value="&lt;font style=&quot;font-size: 12px&quot; face=&quot;Courier New&quot;&gt;program_participants()&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#5E5E5E;strokeWidth=2;fontFamily=Liberation Mono;fontSize=10;fontColor=#333333;" vertex="1" parent="1">
+          <mxGeometry x="-3870" y="228" width="170" height="36" as="geometry" />
+        </mxCell>
+        <mxCell id="-ocyjN4sufj5ShhHaZHQ-120" style="edgeStyle=orthogonalEdgeStyle;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;endArrow=block;endFill=1;strokeColor=#5E5E5E;fontFamily=Liberation Mono;fontSize=10;fontColor=#333333;" edge="1" parent="1" source="-ocyjN4sufj5ShhHaZHQ-117" target="-ocyjN4sufj5ShhHaZHQ-119">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <UserObject label="Запрос" lucidchartObjectId="H~Q0LHvacU.Q" id="-ocyjN4sufj5ShhHaZHQ-117">
+          <mxCell style="html=1;overflow=block;blockSpacing=1;whiteSpace=wrap;;whiteSpace=wrap;fontSize=13;fontColor=#333333;spacing=7;strokeColor=#5E5E5E;rounded=1;absoluteArcSize=1;arcSize=7;strokeWidth=2;" vertex="1" parent="1">
+            <mxGeometry x="-3833" y="314" width="96" height="24" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <mxCell id="-ocyjN4sufj5ShhHaZHQ-122" style="edgeStyle=orthogonalEdgeStyle;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;endArrow=block;endFill=1;strokeColor=#5E5E5E;fontFamily=Liberation Mono;fontSize=10;fontColor=#333333;" edge="1" parent="1" source="-ocyjN4sufj5ShhHaZHQ-119" target="-ocyjN4sufj5ShhHaZHQ-121">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <UserObject label="cursor.fetchall()" lucidchartObjectId="gaR0jCmPV1Eh" id="-ocyjN4sufj5ShhHaZHQ-119">
+          <mxCell style="html=1;overflow=block;blockSpacing=1;whiteSpace=wrap;;whiteSpace=wrap;fontSize=13;fontFamily=Liberation Mono;fontColor=#333333;spacing=7;strokeColor=#5E5E5E;rounded=1;absoluteArcSize=1;arcSize=7;strokeWidth=2;" vertex="1" parent="1">
+            <mxGeometry x="-3863" y="378" width="156" height="24" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <mxCell id="-ocyjN4sufj5ShhHaZHQ-121" value="&lt;font face=&quot;Courier New&quot; style=&quot;font-size: 12px&quot;&gt;return&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#5E5E5E;strokeWidth=2;fontFamily=Liberation Mono;fontSize=10;fontColor=#333333;" vertex="1" parent="1">
+          <mxGeometry x="-3845" y="462" width="120" height="60" as="geometry" />
+        </mxCell>
+        <UserObject label="Класс&amp;nbsp;" lucidchartObjectId="TWQ0KrH0w~ts" id="-ocyjN4sufj5ShhHaZHQ-123">
+          <mxCell style="html=1;overflow=block;blockSpacing=1;whiteSpace=wrap;;whiteSpace=wrap;fontSize=13;fontColor=#333333;spacing=3;strokeColor=#5e5e5e;strokeOpacity=100;rounded=1;absoluteArcSize=1;arcSize=7;strokeWidth=2;" vertex="1" parent="1">
+            <mxGeometry x="-936" y="-40" width="132" height="96" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="log" lucidchartObjectId="JXQ0AlCBZDfg" id="-ocyjN4sufj5ShhHaZHQ-124">
+          <mxCell style="html=1;overflow=block;blockSpacing=1;whiteSpace=wrap;shape=process;whiteSpace=wrap;fontSize=13;fontFamily=Liberation Mono;fontColor=#333333;spacing=3;strokeColor=#5e5e5e;strokeOpacity=100;rounded=1;absoluteArcSize=1;arcSize=7;strokeWidth=2;" vertex="1" parent="1">
+            <mxGeometry x="-1068" y="-28" width="96" height="72" as="geometry" />
+          </mxCell>
+        </UserObject>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
